@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Drupal | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/drupal/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T01:04:15+07:00</updated>
+  <updated>2013-12-27T01:17:55+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -18,7 +18,9 @@
     <link href="http://v3k.net/blog/2013/12/26/at-base-module/"/>
     <updated>2013-12-26T22:28:42+07:00</updated>
     <id>http://v3k.net/blog/2013/12/26/at-base-module</id>
-    <content type="html"><![CDATA[<p>Xin lỗi các bạn nhe, tui viết bài này bằng tiếng Anh để làm tài liệu cho anh em
+    <content type="html"><![CDATA[<p><img class="right <a" src="href="https://drupal.org/files/project-images/godrop.png">https://drupal.org/files/project-images/godrop.png</a>" title="Icon" ></p>
+
+<p>Xin lỗi các bạn nhe, tui viết bài này bằng tiếng Anh để làm tài liệu cho anh em
 trong nhóm làm việc của tui luôn.</p>
 
 <p>Lúc tui viết trang này thì Drupal 8 đang phát triển. Tui không lầm thì phiên bản
