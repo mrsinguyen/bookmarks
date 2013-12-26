@@ -20,6 +20,8 @@ rồi quay lại đọc sau nhé:
 Hy vọng là sắp tới tui sẽ có thời gian rủng rỉnh chút ít để chăm sóc cho cái blog
 thứ N này của tui.
 
+<!-- more -->
+
 Ờ, nói tới cái blog, tui xin giới thiệu chút xíu, blog này tui sử dụng Octopress
 đó. Nó cool lắm! Hắn được xây trên nền Jekyll, mà hỗ trợ nhiều thứ tui nói… nó
 thiệt là đã luôn.

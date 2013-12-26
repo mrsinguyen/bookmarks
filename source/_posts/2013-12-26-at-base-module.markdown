@@ -12,6 +12,8 @@ trong nhóm làm việc của tui luôn.
 Lúc tui viết trang này thì Drupal 8 đang phát triển. Tui không lầm thì phiên bản
 alpha 7 vừa ra đời cách đây vài ngày.
 
+<!-- more -->
+
 Tui rất là thích thú theo dõi các nền tảng web. Tui thích rất nhiều, RoR, Sinatra,
 Django, Symfony, Doctrine, … và đặc biệt là Drupal. Dầu là chưa có commit nào cho
 Drupal 8, nhưng tui theo dõi Drupal hàng tuần, cứ rảnh là tui coi coi, người ta
