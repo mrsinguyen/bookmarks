@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-26T23:34:04+07:00</updated>
+  <updated>2013-12-26T23:39:50+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -23,6 +23,9 @@ trong nhóm làm việc của tui luôn.</p>
 
 <p>Lúc tui viết trang này thì Drupal 8 đang phát triển. Tui không lầm thì phiên bản
 alpha 7 vừa ra đời cách đây vài ngày.</p>
+
+<!-- more -->
+
 
 <p>Tui rất là thích thú theo dõi các nền tảng web. Tui thích rất nhiều, RoR, Sinatra,
 Django, Symfony, Doctrine, … và đặc biệt là Drupal. Dầu là chưa có commit nào cho
