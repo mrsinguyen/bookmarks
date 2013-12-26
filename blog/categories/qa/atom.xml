@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: QA | Vợ Ba Con]]></title>
+  <link href="http://v3k.net/blog/categories/qa/atom.xml" rel="self"/>
+  <link href="http://v3k.net/"/>
+  <updated>2013-12-26T23:57:09+07:00</updated>
+  <id>http://v3k.net/</id>
+  <author>
+    <name><![CDATA[Andy Truong]]></name>
+    <email><![CDATA[v3knet@toila.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[QA Tools]]></title>
+    <link href="http://v3k.net/blog/2013/12/26/qa-tools/"/>
+    <updated>2013-12-26T23:43:07+07:00</updated>
+    <id>http://v3k.net/blog/2013/12/26/qa-tools</id>
+    <content type="html"><![CDATA[<p>Tui hay đi đọc các bài viết về làm web ở đây ở đó, và tui thường thấy người ta
+nói rất nhiều về kiểm thử web. Lần lần thì tui cũng đi tìm hiểu, bắt đầu viết
+test case, tìm hiểu Travis, SimpleTest, PHPUnit, CodeCeption, Mocking, …</p>
+
+<p>Tới bây giờ, tui thấy việc test cho sản phẩm mình viết ra là thiệt sự cần thiết.
+Nhiều khi tui sửa cái X, tui thêm cái Y, tui chẳng bao giờ nghĩ là cái Z nó hư,
+nhưng test nó báo là Z như… tui lật đật đi sửa Z. Ở sản phẩm thiệt, không chỉ có
+Z, mà còn có T, U, V, N, M, L, … không test là hỏng bét hết hà.</p>
+
+<p>Đọc thêm, tui thấy người ta còn có cái chiêu test hay lắm, gọi là BDD, tui chẳng
+cần hiểu sâu sắc nó là gì, tui coi sơ qua thì tui thấy, mấy cái test BDD rất là
+dễ thương, dễ hiểu, tụi nó giống như cái specification của sản phẩm vậy đó. Ở
+nhóm tui, tụi tui thống nhất với nhau là sẽ giao việc viết BDD test này cho QC
+của tui mần. Tui tạ ơn Chúa tui, anh chàng QC ở team tui rất khá, anh ấy làm QC
+mà code cũng ngầu lắm, anh ấy đang tìm hiểu sâu sắc thêm cái gọi là CodeCeption.</p>
+
+<p>Ở PHP, khỏi nói thì ai cũng biết PHPUnit là bá đạo nhứt, tool này tên vậy mà lừa
+tình lắm kìa, anh ấy là Unit mà tui xài tui viết function test cũng được, concept
+cũng được ráo. Há há.</p>
+
+<p>Đọc thêm đây đó nữa, tui thấy người ta còn đưa ra nhiều công cụ khác nữa cho việc
+test. Tui bookmark lại đây để tui tham khảo, nếu có ai mò dzô được đây, tui hy
+vọng cái bookmark này cũng giúp ích ít nhiều cho họ. Hà hà!</p>
+
+<p>Ai có link nào hot hot liên quan tới cái dzụ này thì comment ở dưới dzới tui nhe.
+Tui hứa sẽ điền tên lên bảng vàng luôn ((=</p>
+
+<ol>
+<li><a href="http://mark-rolich.github.io/RulersGuides.js/">http://mark-rolich.github.io/RulersGuides.js/</a></li>
+<li><a href="http://pareview.sh/">http://pareview.sh/</a></li>
+<li><a href="https://drupal.org/project/behat">https://drupal.org/project/behat</a></li>
+<li><a href="http://codeception.com/">http://codeception.com/</a></li>
+<li><a href="http://phantomjs.org/">http://phantomjs.org/</a></li>
+<li>PhatnomCSS — <a href="https://github.com/Huddle/PhantomCSS">https://github.com/Huddle/PhantomCSS</a></li>
+<li><a href="http://casperjs.org/">http://casperjs.org/</a></li>
+<li><a href="http://huddle.github.io/Resemble.js/">http://huddle.github.io/Resemble.js/</a> — Image analysis and comparison</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
