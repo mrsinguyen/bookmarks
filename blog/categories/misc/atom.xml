@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Misc | Vợ Ba Con]]></title>
+  <link href="http://andytruong.github.io/blog/categories/misc/atom.xml" rel="self"/>
+  <link href="http://andytruong.github.io/"/>
+  <updated>2013-12-26T23:01:26+07:00</updated>
+  <id>http://andytruong.github.io/</id>
+  <author>
+    <name><![CDATA[Andy Truong]]></name>
+    <email><![CDATA[v3knet@toila.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://andytruong.github.io/blog/2013/12/26/hello-world/"/>
+    <updated>2013-12-26T21:43:15+07:00</updated>
+    <id>http://andytruong.github.io/blog/2013/12/26/hello-world</id>
+    <content type="html"><![CDATA[<p>Xin bạn, thật có duyên khi bạn ghé lại trang nhà đơn sơ của tui ^^</p>
+
+<p>Tui ít nói, ít viết, mà tui viết thì tui thường viết về các chủ đề rất… chán.
+Đây là một vài chủ đề mà tui quan tâm, nếu bạn có cùng sở thích thì bookmark tui
+rồi quay lại đọc sau nhé:</p>
+
+<ol>
+<li>Tín lý Thánh Kinh</li>
+<li>Các món về lập trình web PHP/Drupal/Javascript/…</li>
+<li>Tin tức công nghệ</li>
+<li>Hình ảnh vợ con</li>
+</ol>
+
+
+<p>Hy vọng là sắp tới tui sẽ có thời gian rủng rỉnh chút ít để chăm sóc cho cái blog
+thứ N này của tui.</p>
+
+<p>Ờ, nói tới cái blog, tui xin giới thiệu chút xíu, blog này tui sử dụng Octopress
+đó. Nó cool lắm! Hắn được xây trên nền Jekyll, mà hỗ trợ nhiều thứ tui nói… nó
+thiệt là đã luôn.</p>
+
+<ol>
+<li>Hỗ trợ markdown nè. Tui là tui ưng cái Markdown lắm nha.</li>
+<li>Tui viết blog được luôn nè. Trang &ldquo;Hello World&rdquo; này là một thí dụ :P</li>
+<li>Tui cũng có thể viết code trên đây ngon lành luôn. Hông tin coi ở <a href="http://octopress.org/docs/blogging/code/">đây</a> nè</li>
+</ol>
+
+
+<p>Nếu bạn mà có thích thú thì cứ guốc gồ mà tìm kiếm rồi vọc nhé.</p>
+
+<p>Vợ Ba Con!</p>
+]]></content>
+  </entry>
+  
+</feed>
