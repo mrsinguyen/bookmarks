@@ -4,7 +4,7 @@
   <title><![CDATA[Category: QA | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/qa/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-26T23:58:51+07:00</updated>
+  <updated>2013-12-27T00:02:41+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -54,10 +54,11 @@ Tui hứa sẽ điền tên lên bảng vàng luôn ((=</p>
 <li><a href="https://drupal.org/project/behat">https://drupal.org/project/behat</a></li>
 <li><a href="http://codeception.com/">http://codeception.com/</a></li>
 <li><a href="http://phantomjs.org/">http://phantomjs.org/</a></li>
-<li>PhatnomCSS — <a href="https://github.com/Huddle/PhantomCSS">https://github.com/Huddle/PhantomCSS</a></li>
-<li><a href="http://casperjs.org/">http://casperjs.org/</a></li>
-<li><a href="http://huddle.github.io/Resemble.js/">http://huddle.github.io/Resemble.js/</a> — Image analysis and comparison</li>
-<li><a href="https://prague2013.drupal.org/session/behat-contrib">https://prague2013.drupal.org/session/behat-contrib</a> (Bài nói chuyện về Behat cho Drupal, dài gần 2h 30min, rất dài, nhưng rất đáng xem)</li>
+<li><a href="https://github.com/Huddle/PhantomCSS">PhatnomCSS</a></li>
+<li><a href="http://huddle.github.io/Resemble.js/">Image analysis and comparison</a></li>
+<li><a href="https://prague2013.drupal.org/session/behat-contrib">Bài nói chuyện về Behat cho Drupal, dài gần 2h 30min, rất dài, nhưng rất đáng xem</a></li>
+<li><a href="http://casperjs.org/">CasperJS</a></li>
+<li> <a href="http://www.phase2technology.com/blog/behavorial-test-for-custom-entity-using-casperjs/">Behavorial Test For Custom Entity Using CasperJS</a></li>
 </ol>
 
 ]]></content>
