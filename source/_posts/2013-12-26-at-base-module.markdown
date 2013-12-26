@@ -6,6 +6,8 @@ comments: true
 categories: ['Drupal', 'Drupal 7', 'Drupal 8']
 ---
 
+{% img right https://drupal.org/files/project-images/godrop.png Icon %}
+
 Xin lỗi các bạn nhe, tui viết bài này bằng tiếng Anh để làm tài liệu cho anh em
 trong nhóm làm việc của tui luôn.
 
