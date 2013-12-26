@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.v3k.net
+url: http://andytruong.github.io
 title: Vợ Ba Con
 subtitle: Trang nhà của tui nè
 author: Andy Truong
@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+subscribe_rss: /andytruong/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: v3knet@toila.net
@@ -29,7 +29,7 @@ email: v3knet@toila.net
 root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
-destination: public
+destination: public/andytruong
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
