@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://www.v3k.net
+title: Vợ Ba Con
+subtitle: Trang nhà của tui nè
+author: Andy Truong
 simple_search: http://google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: v3knet@toila.net
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -63,13 +63,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: andytruong
+github_repo_count: 1
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: thehongtt
 twitter_tweet_button: true
 
 # Google +1
@@ -86,15 +86,15 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
+delicious_user: andytruong
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: v3knet
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-46722106-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
