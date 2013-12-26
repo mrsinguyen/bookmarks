@@ -1,0 +1,46 @@
+---
+layout: post
+title: "QA Tools"
+date: 2013-12-26 23:43:07 +0700
+comments: true
+categories: ['Bookmarks', 'QA']
+---
+
+Tui hay đi đọc các bài viết về làm web ở đây ở đó, và tui thường thấy người ta
+nói rất nhiều về kiểm thử web. Lần lần thì tui cũng đi tìm hiểu, bắt đầu viết
+test case, tìm hiểu Travis, SimpleTest, PHPUnit, CodeCeption, Mocking, …
+
+Tới bây giờ, tui thấy việc test cho sản phẩm mình viết ra là thiệt sự cần thiết.
+Nhiều khi tui sửa cái X, tui thêm cái Y, tui chẳng bao giờ nghĩ là cái Z nó hư,
+nhưng test nó báo là Z như… tui lật đật đi sửa Z. Ở sản phẩm thiệt, không chỉ có
+Z, mà còn có T, U, V, N, M, L, … không test là hỏng bét hết hà.
+
+<!-- more -->
+
+Đọc thêm, tui thấy người ta còn có cái chiêu test hay lắm, gọi là BDD, tui chẳng
+cần hiểu sâu sắc nó là gì, tui coi sơ qua thì tui thấy, mấy cái test BDD rất là
+dễ thương, dễ hiểu, tụi nó giống như cái specification của sản phẩm vậy đó. Ở
+nhóm tui, tụi tui thống nhất với nhau là sẽ giao việc viết BDD test này cho QC
+của tui mần. Tui tạ ơn Chúa tui, anh chàng QC ở team tui rất khá, anh ấy làm QC
+mà code cũng ngầu lắm, anh ấy đang tìm hiểu sâu sắc thêm cái gọi là CodeCeption.
+
+Ở PHP, khỏi nói thì ai cũng biết PHPUnit là bá đạo nhứt, tool này tên vậy mà lừa
+tình lắm kìa, anh ấy là Unit mà tui xài tui viết function test cũng được, concept
+cũng được ráo. Há há.
+
+Đọc thêm đây đó nữa, tui thấy người ta còn đưa ra nhiều công cụ khác nữa cho việc
+test. Tui bookmark lại đây để tui tham khảo, nếu có ai mò dzô được đây, tui hy
+vọng cái bookmark này cũng giúp ích ít nhiều cho họ. Hà hà!
+
+Ai có link nào hot hot liên quan tới cái dzụ này thì comment ở dưới dzới tui nhe.
+Tui hứa sẽ điền tên lên bảng vàng luôn ((=
+
+1. http://mark-rolich.github.io/RulersGuides.js/
+1. http://pareview.sh/
+1. https://drupal.org/project/behat
+1. http://codeception.com/
+1. http://phantomjs.org/
+1. PhatnomCSS — https://github.com/Huddle/PhantomCSS
+1. http://casperjs.org/
+1. http://huddle.github.io/Resemble.js/ — Image analysis and comparison
+1. https://prague2013.drupal.org/session/behat-contrib (Bài nói chuyện về Behat cho Drupal, dài gần 2h 30min, rất dài, nhưng rất đáng xem)
