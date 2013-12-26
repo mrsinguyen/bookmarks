@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Misc | Vợ Ba Con]]></title>
-  <link href="http://andytruong.github.io/blog/categories/misc/atom.xml" rel="self"/>
-  <link href="http://andytruong.github.io/"/>
-  <updated>2013-12-26T23:24:05+07:00</updated>
-  <id>http://andytruong.github.io/</id>
+  <link href="http://v3k.net/blog/categories/misc/atom.xml" rel="self"/>
+  <link href="http://v3k.net/"/>
+  <updated>2013-12-26T23:31:41+07:00</updated>
+  <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
     <email><![CDATA[v3knet@toila.net]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://andytruong.github.io/blog/2013/12/26/hello-world/"/>
+    <link href="http://v3k.net/blog/2013/12/26/hello-world/"/>
     <updated>2013-12-26T21:43:15+07:00</updated>
-    <id>http://andytruong.github.io/blog/2013/12/26/hello-world</id>
+    <id>http://v3k.net/blog/2013/12/26/hello-world</id>
     <content type="html"><![CDATA[<p>Xin bạn, thật có duyên khi bạn ghé lại trang nhà đơn sơ của tui ^^</p>
 
 <p>Tui ít nói, ít viết, mà tui viết thì tui thường viết về các chủ đề rất… chán.
