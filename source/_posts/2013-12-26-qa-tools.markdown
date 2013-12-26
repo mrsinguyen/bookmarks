@@ -40,7 +40,8 @@ Tui hứa sẽ điền tên lên bảng vàng luôn ((=
 1. https://drupal.org/project/behat
 1. http://codeception.com/
 1. http://phantomjs.org/
-1. PhatnomCSS — https://github.com/Huddle/PhantomCSS
-1. http://casperjs.org/
-1. http://huddle.github.io/Resemble.js/ — Image analysis and comparison
-1. https://prague2013.drupal.org/session/behat-contrib (Bài nói chuyện về Behat cho Drupal, dài gần 2h 30min, rất dài, nhưng rất đáng xem)
+1. [PhatnomCSS](https://github.com/Huddle/PhantomCSS)
+1. [Image analysis and comparison](http://huddle.github.io/Resemble.js/)
+1. [Bài nói chuyện về Behat cho Drupal, dài gần 2h 30min, rất dài, nhưng rất đáng xem](https://prague2013.drupal.org/session/behat-contrib)
+1. [CasperJS](http://casperjs.org/)
+  1. [Behavorial Test For Custom Entity Using CasperJS](http://www.phase2technology.com/blog/behavorial-test-for-custom-entity-using-casperjs/)

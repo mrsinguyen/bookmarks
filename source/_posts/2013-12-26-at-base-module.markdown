@@ -36,6 +36,8 @@ Càng viết càng thấy mê, càng thấy thích thú… cái thú vọc code.
 Xin lỗi lần nữa, tui phải viết tiếng Anh, cho đồng nghiệp ở VN với lại non-VN coi
 nữa (tiếng Anh của tui không tốt lắm, nên tui đây mới xin lỗi, ha ha).
 
+Quý bạn nào đọc rồi muốn tìm hiểu thêm thì [thẳng tiến vào Github](https://github.com/andytruong/at_base) luôn nhe.
+
 **Vợ Ba Con**
 
 {% gist 8052716 %}

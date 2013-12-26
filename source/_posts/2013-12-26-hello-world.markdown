@@ -15,7 +15,7 @@ rồi quay lại đọc sau nhé:
 1. Tín lý Thánh Kinh
 1. Các món về lập trình web PHP/Drupal/Javascript/…
 1. Tin tức công nghệ
-1. Hình ảnh vợ con
+1. Hình ảnh vợ con (cái dzụ này tui hông hứa, đưa hình ảnh vợ con lên chốn công cộng tui thấy hơi kỳ kỳ…)
 
 Hy vọng là sắp tới tui sẽ có thời gian rủng rỉnh chút ít để chăm sóc cho cái blog
 thứ N này của tui.
@@ -33,4 +33,13 @@ thiệt là đã luôn.
 
 Nếu bạn mà có thích thú thì cứ guốc gồ mà tìm kiếm rồi vọc nhé.
 
-Vợ Ba Con!
+**Vợ Ba Con**
+
+### Tái bút
+
+Nhiều người biết tui sẽ hỏi, ê mẫy, mẫy chỉ có hai con sao mầy lấy
+domain quái vậy!
+
+**Tui:** Xin lỗi tui đã gây hiểu lầm nhe, xin hiểu là: **"Tui mong có một vợ
+và ba con" (có nhiều con hơn cũng được)**, chứ đừng hiểu ngược thành *"Ba con
+vợ"*, tội nghiệp cho tui lắm.
