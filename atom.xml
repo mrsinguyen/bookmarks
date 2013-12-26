@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T00:51:06+07:00</updated>
+  <updated>2013-12-27T00:53:48+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Con Trai 5 Tháng Tuổi]]></title>
+    <link href="http://v3k.net/blog/2013/12/27/son/"/>
+    <updated>2013-12-27T00:52:17+07:00</updated>
+    <id>http://v3k.net/blog/2013/12/27/son</id>
+    <content type="html"><![CDATA[<p><img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/1507833_10152194994247122_1571063971_n.jpg" title="Con trai tui nè" ></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[QA Tools]]></title>
