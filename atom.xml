@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-26T23:57:09+07:00</updated>
+  <updated>2013-12-26T23:58:51+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -26,6 +26,9 @@ test case, tìm hiểu Travis, SimpleTest, PHPUnit, CodeCeption, Mocking, …</p
 Nhiều khi tui sửa cái X, tui thêm cái Y, tui chẳng bao giờ nghĩ là cái Z nó hư,
 nhưng test nó báo là Z như… tui lật đật đi sửa Z. Ở sản phẩm thiệt, không chỉ có
 Z, mà còn có T, U, V, N, M, L, … không test là hỏng bét hết hà.</p>
+
+<!-- more -->
+
 
 <p>Đọc thêm, tui thấy người ta còn có cái chiêu test hay lắm, gọi là BDD, tui chẳng
 cần hiểu sâu sắc nó là gì, tui coi sơ qua thì tui thấy, mấy cái test BDD rất là
@@ -54,6 +57,7 @@ Tui hứa sẽ điền tên lên bảng vàng luôn ((=</p>
 <li>PhatnomCSS — <a href="https://github.com/Huddle/PhantomCSS">https://github.com/Huddle/PhantomCSS</a></li>
 <li><a href="http://casperjs.org/">http://casperjs.org/</a></li>
 <li><a href="http://huddle.github.io/Resemble.js/">http://huddle.github.io/Resemble.js/</a> — Image analysis and comparison</li>
+<li><a href="https://prague2013.drupal.org/session/behat-contrib">https://prague2013.drupal.org/session/behat-contrib</a> (Bài nói chuyện về Behat cho Drupal, dài gần 2h 30min, rất dài, nhưng rất đáng xem)</li>
 </ol>
 
 ]]></content>
