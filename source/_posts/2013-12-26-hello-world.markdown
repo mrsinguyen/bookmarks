@@ -6,7 +6,7 @@ comments: true
 categories: ["Misc"]
 ---
 
-Xin bạn, thật có duyên khi bạn ghé lại trang nhà đơn sơ của tui ^^
+Xin chào bạn, thật có duyên khi bạn ghé lại trang nhà đơn sơ của tui ^^
 
 Tui ít nói, ít viết, mà tui viết thì tui thường viết về các chủ đề rất… chán.
 Đây là một vài chủ đề mà tui quan tâm, nếu bạn có cùng sở thích thì bookmark tui

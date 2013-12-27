@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Bản tin web 2013 Tháng 12"
+date: 2013-12-27 08:51:09 +0700
+comments: true
+categories: ["Bookmarks", "Web"]
+---
+
+Link thì nhiều, tuỳ theo hứng, lúc thì tôi share chỗ này, lúc thì tôi lưu chỗ nọ.
+Từ nay có blog rồi, tôi sẽ lưu ở đây luôn. Mỗi tháng, tôi sẽ lưu các link cùng một
+trang.
+
+<!-- more -->
+
+### HTML, CSS
+
+- [Bootstrap 3.0.3 released](http://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/)
+
+### Javascript
+
+- [parse5: An HTML5 Parser for Node.js](https://github.com/inikulin/parse5) — A fast, full-featured HTML parser for Node, based on the WHATWG HTML5 specification.
+- [DYNATABLE - HTML5+JSON Interactive Table Plugin](http://www.dynatable.com/)
+- [How many JavaScript code can we fit in 140 characters?](http://xem.github.io/?golfing)
+
+### Mobile
+
+- [Mobile-Friendly Mapping for PhoneGap Apps](http://flippinawesome.org/2013/12/09/mobile-friendly-mapping-for-phonegap-apps/)
+- [Protecting your Firefox OS App code](https://hacks.mozilla.org/2013/12/protecting-your-firefox-os-app-code/)
+
+### PHP
+
+- [Zephir Language](http://zephir-lang.com/) Ngôn ngữ trung gian giúp lập trình viên PHP có thể viết PHP Extension không cần rành C #php #zephir
+- [We are the 98.5% (and the 16%) — HHVM](http://www.hhvm.com/blog/2813/we-are-the-98-5-and-the-16)
+- [Kế hoạch hỗ trợ HHVM từ Doctrine projects #php #doctrine #hhvm #roadmap](http://www.doctrine-project.org/blog/our-hhvm-roadmap.html)
+- [Propilex](https://github.com/willdurand/Propilex) , tên nghe lạ, nhưng là framework tập hợp các anh hào rất quen — Silex, Propel, Backbone, Stack, Hateoas, Negotiation, and so on… Services ready, rất thú vị #php #framework #silex #propel #backbone
+- [opcache đã được đưa vào PHP 5.5. Quên APC lần lần nhé anh em #php #php55 #opcache](http://php.net/opcache)
+- [Ứng dụng viết bằng PHP giúp dọc git repos #php #app #git #reader](https://github.com/klaussilveira/gitlist)
+- [WordPress 3.8 Has Been Released](http://speckyboy.com/2013/12/14/wordpress-3-8-released-week/)
+
+### Drupal
+
+- [DrupalAppConsole](https://github.com/hechoendrupal/DrupalAppConsole) — The Symfony Console for Drupal
+- [Mánh nhỏ giúp image field lấy ảnh được từ camera #drupal #dev #mobile #tip](http://cafuego.net/2013/04/26/add-images-drupal-your-mobile-device)
+- [Một số site nổi tiếng của VN sử dụng Drupal #drupal #sites](https://www.facebook.com/laptrinhviendrupal/posts/726549914022039)
+- Như đã biết, APC thuần tuý đã không còn cần thiết ở PHP 5.5. Anh em nào còn sử dụng tính năng user cache của APC, có thể sử dụng [extension APCu](http://pecl.php.net/package/APCu) #php #php55 #apc #apcu
+
+### Hacker
+
+- [websocketd](https://github.com/joewalnes/websocketd) Like inetd, but for WebSockets. Turn any application that uses STDIO/STDOUT into a WebSocket server.
+- [Native Code on the web: Portable Native Client](http://www.youtube.com/watch?v=MvKEomoiKBA)
+- [miniCodeEditor](https://github.com/xem/miniCodeEditor) - Tiny, simple, handy! I have [a copy here](/tools/html-playround/index.html).
+- [explainShell.com](http://explainshell.com/) ứng dụng online, đơn giản, nhưng giúp anh em ta dễ hiểu hơn các shell command không đơn giản #shell #online #app

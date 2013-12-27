@@ -3,3 +3,7 @@
 header[role="banner"] {
   background: #000 url(/images/dark_candle_bible_banner.jpg) 100% 0 no-repeat;
 }
+
+@media only screen and (max-width: 768px) {
+  background: #333;
+}
