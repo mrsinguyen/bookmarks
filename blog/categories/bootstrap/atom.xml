@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Bootstrap | Vợ Ba Con]]></title>
+  <link href="http://v3k.net/blog/categories/bootstrap/atom.xml" rel="self"/>
+  <link href="http://v3k.net/"/>
+  <updated>2013-12-27T16:15:43+07:00</updated>
+  <id>http://v3k.net/</id>
+  <author>
+    <name><![CDATA[Andy Truong]]></name>
+    <email><![CDATA[v3knet@toila.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Bootstrap Page Cache - Drupal 7]]></title>
+    <link href="http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7/"/>
+    <updated>2013-12-27T16:10:17+07:00</updated>
+    <id>http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7</id>
+    <content type="html"><![CDATA[<p>Hôm nay, tôi có đụng tới phần cache của cái bộ route trong Drupal 7, nên muốn đi
+coi kỹ lại phần bootstrap của Drupal.</p>
+
+<!-- more -->
+
+
+<p>Bootstrap của Drupal 7 gồm có các bước sau, tui chỉ copy lại từ phần comment của
+hàm drupal_bootstrap() thôi.</p>
+
+<ul>
+<li><strong>DRUPAL_BOOTSTRAP_CONFIGURATION</strong>: Initializes configuration.</li>
+<li><strong>DRUPAL_BOOTSTRAP_PAGE_CACHE</strong>: Tries to serve a cached page.</li>
+<li><strong>DRUPAL_BOOTSTRAP_DATABASE</strong>: Initializes the database layer.</li>
+<li><strong>DRUPAL_BOOTSTRAP_VARIABLES</strong>: Initializes the variable system.</li>
+<li><strong>DRUPAL_BOOTSTRAP_SESSION</strong>: Initializes session handling.</li>
+<li><strong>DRUPAL_BOOTSTRAP_PAGE_HEADER</strong>: Sets up the page header.</li>
+<li><strong>DRUPAL_BOOTSTRAP_LANGUAGE</strong>: Finds out the language of the page.</li>
+<li><strong>DRUPAL_BOOTSTRAP_FULL</strong>: Fully loads Drupal. Validates and fixes input data.</li>
+</ul>
+
+
+<p>Mấy phần khác tui không quan tâm lắm, tui chỉ quan tâm tới cái bước
+DRUPAL_BOOTSTRAP_PAGE_CACHE. Nghĩa là để cho Drupal delivery được nội dung
+tới người dùng cuối mà không có đụng tới DB, tui cần phải làm gì. Tui coi tới
+coi lui, thì tạm kết luận, cái luồng của nó như sau:</p>
+
+<ul>
+<li>_drupal_bootstrap_page_cache()</li>
+<li>If variable_get(&lsquo;page_cache_without_database&rsquo;),
+
+<ul>
+<li>then $conf[&lsquo;cache&rsquo;] is true. There is no DB bootstrap here.</li>
+<li>else, force drupal boots DRUPAL_BOOTSTRAP_DATABASE and DRUPAL_BOOTSTRAP_VARIABLES</li>
+</ul>
+</li>
+<li>If !$conf[&lsquo;cache&rsquo;], no page cache, boot to next step.</li>
+<li>If User IP is block, return 403, exit &mdash; drupal_is_denied() only query db if db
+connection is available</li>
+<li>If user has cookie, or the request is not cachable
+
+<ul>
+<li>Then, header has &lsquo;X-Drupal-Cache: MISS&rsquo;</li>
+<li>Else, get cached content
+
+<ul>
+<li>Cache ID: $base_root . request_uri()</li>
+<li>Cache Bin: cache_page</li>
+<li>Cachable: Http Method = GET/HEAD, !drupal_is_cli()</li>
+<li>Cached data must be array(), has key path, title, …</li>
+<li>If $conf[&lsquo;page_cache_invoke_hooks&rsquo;] > invoke hook_boot</li>
+<li>Delivery content &mdash; drupal_serve_page_from_cache($cache)</li>
+<li>If $conf[&lsquo;page_cache_invoke_hooks&rsquo;] > invoke hook_exit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Vậy thôi, hy vọng note này giúp ích gì đó cho người tìm kiếm trên Google.</p>
+
+<p><strong>Vợ Ba Con</strong></p>
+]]></content>
+  </entry>
+  
+</feed>

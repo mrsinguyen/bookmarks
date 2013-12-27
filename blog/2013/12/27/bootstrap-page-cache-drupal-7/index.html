@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Vợ Ba Con</title>
+  <title>Bootstrap Page Cache - Drupal 7 - Vợ Ba Con</title>
   <meta name="author" content="Andy Truong">
 
   
   <meta name="description" content="Hôm nay, tôi có đụng tới phần cache của cái bộ route trong Drupal 7, nên muốn đi
-coi kỹ lại phần bootstrap của Drupal. ">
+coi kỹ lại phần bootstrap của Drupal. Bootstrap của Drupal 7 gồm có &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ coi kỹ lại phần bootstrap của Drupal. ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://v3k.net">
+  <link rel="canonical" href="http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Vợ Ba Con" type="application/atom+xml">
@@ -77,15 +77,12 @@ coi kỹ lại phần bootstrap của Drupal. ">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/12/27/bootstrap-page-cache-drupal-7/">Bootstrap Page Cache - Drupal 7</a></h1>
+      <h1 class="entry-title">Bootstrap Page Cache - Drupal 7</h1>
     
     
       <p class="meta">
@@ -108,73 +105,79 @@ coi kỹ lại phần bootstrap của Drupal. ">
   </header>
 
 
-  <div class="entry-content"><p>Hôm nay, tôi có đụng tới phần cache của cái bộ route trong Drupal 7, nên muốn đi
+<div class="entry-content"><p>Hôm nay, tôi có đụng tới phần cache của cái bộ route trong Drupal 7, nên muốn đi
 coi kỹ lại phần bootstrap của Drupal.</p>
 
+<!-- more -->
+
+
+<p>Bootstrap của Drupal 7 gồm có các bước sau, tui chỉ copy lại từ phần comment của
+hàm drupal_bootstrap() thôi.</p>
+
+<ul>
+<li><strong>DRUPAL_BOOTSTRAP_CONFIGURATION</strong>: Initializes configuration.</li>
+<li><strong>DRUPAL_BOOTSTRAP_PAGE_CACHE</strong>: Tries to serve a cached page.</li>
+<li><strong>DRUPAL_BOOTSTRAP_DATABASE</strong>: Initializes the database layer.</li>
+<li><strong>DRUPAL_BOOTSTRAP_VARIABLES</strong>: Initializes the variable system.</li>
+<li><strong>DRUPAL_BOOTSTRAP_SESSION</strong>: Initializes session handling.</li>
+<li><strong>DRUPAL_BOOTSTRAP_PAGE_HEADER</strong>: Sets up the page header.</li>
+<li><strong>DRUPAL_BOOTSTRAP_LANGUAGE</strong>: Finds out the language of the page.</li>
+<li><strong>DRUPAL_BOOTSTRAP_FULL</strong>: Fully loads Drupal. Validates and fixes input data.</li>
+</ul>
+
+
+<p>Mấy phần khác tui không quan tâm lắm, tui chỉ quan tâm tới cái bước
+DRUPAL_BOOTSTRAP_PAGE_CACHE. Nghĩa là để cho Drupal delivery được nội dung
+tới người dùng cuối mà không có đụng tới DB, tui cần phải làm gì. Tui coi tới
+coi lui, thì tạm kết luận, cái luồng của nó như sau:</p>
+
+<ul>
+<li>_drupal_bootstrap_page_cache()</li>
+<li>If variable_get(&lsquo;page_cache_without_database&rsquo;),
+
+<ul>
+<li>then $conf[&lsquo;cache&rsquo;] is true. There is no DB bootstrap here.</li>
+<li>else, force drupal boots DRUPAL_BOOTSTRAP_DATABASE and DRUPAL_BOOTSTRAP_VARIABLES</li>
+</ul>
+</li>
+<li>If !$conf[&lsquo;cache&rsquo;], no page cache, boot to next step.</li>
+<li>If User IP is block, return 403, exit &mdash; drupal_is_denied() only query db if db
+connection is available</li>
+<li>If user has cookie, or the request is not cachable
+
+<ul>
+<li>Then, header has &lsquo;X-Drupal-Cache: MISS&rsquo;</li>
+<li>Else, get cached content
+
+<ul>
+<li>Cache ID: $base_root . request_uri()</li>
+<li>Cache Bin: cache_page</li>
+<li>Cachable: Http Method = GET/HEAD, !drupal_is_cli()</li>
+<li>Cached data must be array(), has key path, title, …</li>
+<li>If $conf[&lsquo;page_cache_invoke_hooks&rsquo;] > invoke hook_boot</li>
+<li>Delivery content &mdash; drupal_serve_page_from_cache($cache)</li>
+<li>If $conf[&lsquo;page_cache_invoke_hooks&rsquo;] > invoke hook_exit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Vậy thôi, hy vọng note này giúp ích gì đó cho người tìm kiếm trên Google.</p>
+
+<p><strong>Vợ Ba Con</strong></p>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/27/bootstrap-page-cache-drupal-7/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/27/ban-tin-web-2013-12/">Bản Tin Web 2013 Tháng 12</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Andy Truong</span></span>
 
-<time datetime="2013-12-27T08:51:09+07:00" pubdate data-updated="true">Dec 27<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Link thì nhiều, tuỳ theo hứng, lúc thì tôi share chỗ này, lúc thì tôi lưu chỗ nọ.
-Từ nay có blog rồi, tôi sẽ lưu ở đây luôn. Mỗi tháng, tôi sẽ lưu các link cùng một
-trang.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/27/ban-tin-web-2013-12/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/27/son/">Con Trai 5 Tháng Tuổi</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -186,185 +189,46 @@ trang.</p>
   
 
 
-<time datetime="2013-12-27T00:52:17+07:00" pubdate data-updated="true">Dec 27<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Con tui dễ thương lắm, đi đâu mệt mỏi, về nhà thấy cái mặt nó là tui vui liền hà.</p>
-
-<p><img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/1507833_10152194994247122_1571063971_n.jpg" title="Con trai tui nè" ></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/27/son/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2013-12-27T16:10:17+07:00" pubdate data-updated="true">Dec 27<span>th</span>, 2013</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/26/qa-tools/">QA Tools</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/drupal/'>Drupal</a>, <a class='category' href='/blog/categories/drupal-7/'>Drupal 7</a>, <a class='category' href='/blog/categories/bootstrap/'>bootstrap</a>, <a class='category' href='/blog/categories/cache/'>cache</a>
+  
+</span>
 
 
-<time datetime="2013-12-26T23:43:07+07:00" pubdate data-updated="true">Dec 26<span>th</span>, 2013</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>Tui hay đi đọc các bài viết về làm web ở đây ở đó, và tui thường thấy người ta
-nói rất nhiều về kiểm thử web. Lần lần thì tui cũng đi tìm hiểu, bắt đầu viết
-test case, tìm hiểu Travis, SimpleTest, PHPUnit, CodeCeption, Mocking, …</p>
-
-<p>Tới bây giờ, tui thấy việc test cho sản phẩm mình viết ra là thiệt sự cần thiết.
-Nhiều khi tui sửa cái X, tui thêm cái Y, tui chẳng bao giờ nghĩ là cái Z nó hư,
-nhưng test nó báo là Z như… tui lật đật đi sửa Z. Ở sản phẩm thiệt, không chỉ có
-Z, mà còn có T, U, V, N, M, L, … không test là hỏng bét hết hà.</p>
-
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7/" data-via="thehongtt" data-counturl="http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/26/qa-tools/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/26/at-base-module/">At Base Module</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-26T22:28:42+07:00" pubdate data-updated="true">Dec 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="https://drupal.org/files/project-images/godrop.png" title="Icon" ></p>
-
-<p>Xin lỗi các bạn nhe, tui viết bài này bằng tiếng Anh để làm tài liệu cho anh em
-trong nhóm làm việc của tui luôn.</p>
-
-<p>Lúc tui viết trang này thì Drupal 8 đang phát triển. Tui không lầm thì phiên bản
-alpha 7 vừa ra đời cách đây vài ngày.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/26/at-base-module/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/blog/2013/12/27/ban-tin-web-2013-12/" title="Previous Post: Bản tin web 2013 Tháng 12">&laquo; Bản tin web 2013 Tháng 12</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/26/hello-world/">Hello World</a></h1>
-    
-    
-      <p class="meta">
-        
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-26T21:43:15+07:00" pubdate data-updated="true">Dec 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Xin chào bạn, thật có duyên khi bạn ghé lại trang nhà đơn sơ của tui ^^</p>
-
-<p>Tui ít nói, ít viết, mà tui viết thì tui thường viết về các chủ đề rất… chán.
-Đây là một vài chủ đề mà tui quan tâm, nếu bạn có cùng sở thích thì bookmark tui
-rồi quay lại đọc sau nhé:</p>
-
-<ol>
-<li>Tín lý Thánh Kinh</li>
-<li>Các món về lập trình web PHP/Drupal/Javascript/…</li>
-<li>Tin tức công nghệ</li>
-<li>Hình ảnh vợ con (cái dzụ này tui hông hứa, đưa hình ảnh vợ con lên chốn công cộng tui thấy hơi kỳ kỳ…)</li>
-</ol>
-
-
-<p>Hy vọng là sắp tới tui sẽ có thời gian rủng rỉnh chút ít để chăm sóc cho cái blog
-thứ N này của tui.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/26/hello-world/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -397,7 +261,7 @@ thứ N này của tui.</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/andytruong">@andytruong</a> on GitHub
@@ -446,6 +310,7 @@ thứ N này của tui.</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -460,7 +325,10 @@ thứ N này của tui.</p>
       var disqus_shortname = 'v3knet';
       
         
-        var disqus_script = 'count.js';
+        var disqus_developer = 1;
+        var disqus_identifier = 'http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7/';
+        var disqus_url = 'http://v3k.net/blog/2013/12/27/bootstrap-page-cache-drupal-7/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
