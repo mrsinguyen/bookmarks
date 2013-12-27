@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T09:24:42+07:00</updated>
+  <updated>2013-12-27T09:30:24+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -37,6 +37,7 @@ trang.</p>
 <ul>
 <li><a href="https://github.com/inikulin/parse5">parse5: An HTML5 Parser for Node.js</a> — A fast, full-featured HTML parser for Node, based on the WHATWG HTML5 specification.</li>
 <li><a href="http://www.dynatable.com/">DYNATABLE &ndash; HTML5+JSON Interactive Table Plugin</a></li>
+<li><a href="http://xem.github.io/?golfing">How many JavaScript code can we fit in 140 characters?</a></li>
 </ul>
 
 
