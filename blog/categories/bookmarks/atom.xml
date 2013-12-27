@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T08:27:28+07:00</updated>
+  <updated>2013-12-27T08:55:15+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bản Tin Web 2013 Tháng 12]]></title>
+    <link href="http://v3k.net/blog/2013/12/27/ban-tin-web-2013-12/"/>
+    <updated>2013-12-27T08:51:09+07:00</updated>
+    <id>http://v3k.net/blog/2013/12/27/ban-tin-web-2013-12</id>
+    <content type="html"><![CDATA[<p>Link thì nhiều, tuỳ theo hứng, lúc thì tôi share chỗ này, lúc thì tôi lưu chỗ nọ.
+Từ nay có blog rồi, tôi sẽ lưu ở đây luôn. Mỗi tháng, tôi sẽ lưu các link cùng một
+trang.</p>
+
+<ul>
+<li><a href="http://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/">Bootstrap 3.0.3 released</a></li>
+<li><a href="https://github.com/inikulin/parse5">parse5: An HTML5 Parser for Node.js</a> — A fast, full-featured HTML parser for Node, based on the WHATWG HTML5 specification.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[QA Tools]]></title>
