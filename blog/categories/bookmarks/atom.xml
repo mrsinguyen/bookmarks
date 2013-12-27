@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T09:20:57+07:00</updated>
+  <updated>2013-12-27T09:21:58+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -36,6 +36,7 @@ trang.</p>
 
 <ul>
 <li><a href="https://github.com/inikulin/parse5">parse5: An HTML5 Parser for Node.js</a> — A fast, full-featured HTML parser for Node, based on the WHATWG HTML5 specification.</li>
+<li><a href="http://www.dynatable.com/">DYNATABLE &ndash; HTML5+JSON Interactive Table Plugin</a></li>
 </ul>
 
 
@@ -43,16 +44,6 @@ trang.</p>
 
 <ul>
 <li><a href="http://flippinawesome.org/2013/12/09/mobile-friendly-mapping-for-phonegap-apps/">Mobile-Friendly Mapping for PhoneGap Apps</a></li>
-</ul>
-
-
-<h3>Hacker</h3>
-
-<ul>
-<li><a href="https://github.com/joewalnes/websocketd">websocketd</a> Like inetd, but for WebSockets. Turn any application that uses STDIO/STDOUT into a WebSocket server.</li>
-<li><a href="http://www.youtube.com/watch?v=MvKEomoiKBA">Native Code on the web: Portable Native Client</a></li>
-<li><a href="https://github.com/xem/miniCodeEditor">miniCodeEditor</a> &ndash; Tiny, simple, handy! I have <a href="/tools/html-playround/index.html">a copy here</a>.</li>
-<li><a href="http://explainshell.com/">explainShell.com</a> ứng dụng online, đơn giản, nhưng giúp anh em ta dễ hiểu hơn các shell command không đơn giản #shell #online #app</li>
 </ul>
 
 
@@ -75,6 +66,16 @@ trang.</p>
 <li><a href="http://cafuego.net/2013/04/26/add-images-drupal-your-mobile-device">Mánh nhỏ giúp image field lấy ảnh được từ camera #drupal #dev #mobile #tip</a></li>
 <li><a href="https://www.facebook.com/laptrinhviendrupal/posts/726549914022039">Một số site nổi tiếng của VN sử dụng Drupal #drupal #sites</a></li>
 <li>Như đã biết, APC thuần tuý đã không còn cần thiết ở PHP 5.5. Anh em nào còn sử dụng tính năng user cache của APC, có thể sử dụng <a href="http://pecl.php.net/package/APCu">extension APCu</a> #php #php55 #apc #apcu</li>
+</ul>
+
+
+<h3>Hacker</h3>
+
+<ul>
+<li><a href="https://github.com/joewalnes/websocketd">websocketd</a> Like inetd, but for WebSockets. Turn any application that uses STDIO/STDOUT into a WebSocket server.</li>
+<li><a href="http://www.youtube.com/watch?v=MvKEomoiKBA">Native Code on the web: Portable Native Client</a></li>
+<li><a href="https://github.com/xem/miniCodeEditor">miniCodeEditor</a> &ndash; Tiny, simple, handy! I have <a href="/tools/html-playround/index.html">a copy here</a>.</li>
+<li><a href="http://explainshell.com/">explainShell.com</a> ứng dụng online, đơn giản, nhưng giúp anh em ta dễ hiểu hơn các shell command không đơn giản #shell #online #app</li>
 </ul>
 
 ]]></content>
