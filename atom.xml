@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T09:05:58+07:00</updated>
+  <updated>2013-12-27T09:08:13+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -51,7 +51,7 @@ trang.</p>
 <ul>
 <li><a href="https://github.com/joewalnes/websocketd">websocketd</a> Like inetd, but for WebSockets. Turn any application that uses STDIO/STDOUT into a WebSocket server.</li>
 <li><a href="http://www.youtube.com/watch?v=MvKEomoiKBA">Native Code on the web: Portable Native Client</a></li>
-<li><a href="https://github.com/xem/miniCodeEditor">miniCodeEditor</a> &ndash; Tiny, simple, handy!</li>
+<li><a href="https://github.com/xem/miniCodeEditor">miniCodeEditor</a> &ndash; Tiny, simple, handy! I have <a href="http://v3k.net/tools/html-playround/index.html">a copy here</a>.</li>
 </ul>
 
 ]]></content>
