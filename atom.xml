@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T09:20:22+07:00</updated>
+  <updated>2013-12-27T09:20:57+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -64,6 +64,7 @@ trang.</p>
 <li><a href="https://github.com/willdurand/Propilex">Propilex</a> , tên nghe lạ, nhưng là framework tập hợp các anh hào rất quen — Silex, Propel, Backbone, Stack, Hateoas, Negotiation, and so on… Services ready, rất thú vị #php #framework #silex #propel #backbone</li>
 <li><a href="http://php.net/opcache">opcache đã được đưa vào PHP 5.5. Quên APC lần lần nhé anh em #php #php55 #opcache</a></li>
 <li><a href="https://github.com/klaussilveira/gitlist">Ứng dụng viết bằng PHP giúp dọc git repos #php #app #git #reader</a></li>
+<li><a href="http://speckyboy.com/2013/12/14/wordpress-3-8-released-week/">WordPress 3.8 Has Been Released</a></li>
 </ul>
 
 
