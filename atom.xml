@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T09:21:58+07:00</updated>
+  <updated>2013-12-27T09:24:42+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -50,6 +50,7 @@ trang.</p>
 <h3>PHP</h3>
 
 <ul>
+<li><a href="http://zephir-lang.com/">Zephir Language</a> Ngôn ngữ trung gian giúp lập trình viên PHP có thể viết PHP Extension không cần rành C #php #zephir</li>
 <li><a href="http://www.hhvm.com/blog/2813/we-are-the-98-5-and-the-16">We are the 98.5% (and the 16%) — HHVM</a></li>
 <li><a href="http://www.doctrine-project.org/blog/our-hhvm-roadmap.html">Kế hoạch hỗ trợ HHVM từ Doctrine projects #php #doctrine #hhvm #roadmap</a></li>
 <li><a href="https://github.com/willdurand/Propilex">Propilex</a> , tên nghe lạ, nhưng là framework tập hợp các anh hào rất quen — Silex, Propel, Backbone, Stack, Hateoas, Negotiation, and so on… Services ready, rất thú vị #php #framework #silex #propel #backbone</li>
