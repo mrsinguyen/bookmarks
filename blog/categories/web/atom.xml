@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T08:55:15+07:00</updated>
+  <updated>2013-12-27T09:00:42+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -22,9 +22,36 @@
 Từ nay có blog rồi, tôi sẽ lưu ở đây luôn. Mỗi tháng, tôi sẽ lưu các link cùng một
 trang.</p>
 
+<!-- more -->
+
+
+<h3>HTML, CSS</h3>
+
 <ul>
 <li><a href="http://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/">Bootstrap 3.0.3 released</a></li>
+</ul>
+
+
+<h3>Javascript</h3>
+
+<ul>
 <li><a href="https://github.com/inikulin/parse5">parse5: An HTML5 Parser for Node.js</a> — A fast, full-featured HTML parser for Node, based on the WHATWG HTML5 specification.</li>
+</ul>
+
+
+<h3>Mobile</h3>
+
+<ul>
+<li><a href="http://flippinawesome.org/2013/12/09/mobile-friendly-mapping-for-phonegap-apps/">Mobile-Friendly Mapping for PhoneGap Apps</a></li>
+</ul>
+
+
+<h3>Hacker</h3>
+
+<ul>
+<li><a href="https://github.com/joewalnes/websocketd">websocketd</a> Like inetd, but for WebSockets. Turn any application that uses STDIO/STDOUT into a WebSocket server.</li>
+<li><a href="http://www.youtube.com/watch?v=MvKEomoiKBA">Native Code on the web: Portable Native Client</a></li>
+<li><a href="https://github.com/xem/miniCodeEditor">miniCodeEditor</a> &ndash; Tiny, simple, handy!</li>
 </ul>
 
 ]]></content>
