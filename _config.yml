@@ -29,7 +29,7 @@ email: v3knet@toila.net
 root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
-destination: public/andytruong
+destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
