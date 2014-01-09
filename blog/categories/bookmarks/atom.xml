@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T21:47:17+07:00</updated>
+  <updated>2014-01-09T21:50:49+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -32,11 +32,20 @@ client/server của ta chỉ cài được vài phiên bản #php #webapp #playr
 xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
 đấy #ruby #rake #bash #autocomplete</p>
 
+<h2>PHP</h2>
+
+<ul>
+<li><a href="https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md">PSR4</a></li>
+</ul>
+
+
 <h2>Drupal</h2>
 
 <ul>
-<li><a href="https://drupal.org/drupal-7.25">Drupal 7.25 released</a></li>
+<li><a href="https://drupal.org/drupal-7.25">Drupal 7.25 released</a> #5star</li>
 <li><a href="https://www.lullabot.com/blog/article/module-monday-role-delay">Module Monday: Role Delay</a></li>
+<li><a href="http://bryanbraun.com/2014/01/01/theres-more-than-one-way-to-save-a-node">There&rsquo;s more than one way to save a node</a> #4star</li>
+<li><a href="http://drupalize.me/blog/introduction-restful-web-services-drupal-8">An Introduction to RESTful Web Services in Drupal 8</a> #5star</li>
 </ul>
 
 ]]></content>
