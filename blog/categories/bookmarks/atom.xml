@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T22:42:09+07:00</updated>
+  <updated>2014-01-09T22:45:56+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -90,6 +90,16 @@ năng hosted service của Mapbox &ndash; nghĩa là nếu tôi có nhu cầu l�
 đại điện, các đại lý, các điểm ăn uống ưu thích, … tôi đều có thể sử dụng Rest API
 của Mapbox lưu, xoá, sửa, truy vấn ngon lành. Tiện lắm cho các ứng dụng hiện đại
 bây giờ (feature as service).</p>
+
+<h4>Chủ đề khác</h4>
+
+<p>Một số chủ đề khác, tôi hy vọng sẽ được học hỏi thêm trong tháng này</p>
+
+<ul>
+<li><a href="http://dcycleproject.org/blog/48/do-not-clone-database">http://dcycleproject.org/blog/48/do-not-clone-database</a></li>
+<li><a href="http://www.garfieldtech.com/blog/beyond-abstract">http://www.garfieldtech.com/blog/beyond-abstract</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
