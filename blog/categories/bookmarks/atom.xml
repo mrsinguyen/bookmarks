@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T23:47:59+07:00</updated>
+  <updated>2014-01-09T23:57:25+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -77,7 +77,7 @@ cuốn hút. Bookmark trang nhà anh ấy ở đây, tôi sẽ học hỏi thêm
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Bản Tin Web 2013 Tháng 12]]></title>
+    <title type="html"><![CDATA[Bản Tin Web 2014 Tháng 01]]></title>
     <link href="http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01/"/>
     <updated>2014-01-09T21:17:55+07:00</updated>
     <id>http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01</id>
@@ -87,6 +87,7 @@ cuốn hút. Bookmark trang nhà anh ấy ở đây, tôi sẽ học hỏi thêm
 
 <ul>
 <li><a href="https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md">PSR4</a></li>
+<li><a href="http://ocramius.github.io/blog/zf2-and-symfony-service-proxies-with-doctrine-proxies/">Service Locator</a></li>
 </ul>
 
 
