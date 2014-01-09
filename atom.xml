@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T22:05:18+07:00</updated>
+  <updated>2014-01-09T22:12:23+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -144,6 +144,21 @@ client/server của ta chỉ cài được vài phiên bản #php #webapp #playr
 <p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
 xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
 đấy #ruby #rake #bash #autocomplete</p>
+
+<h3>Self Training</h3>
+
+<p>Văn phòng nơi tôi đang làm việc có chương trình là để mỗi người tự chọn chủ đề,
+tự nghiên cứu, rồi tự lên lịch để trình bày. Thứ mỗi thứ hai, tư, sáu mỗi tuần,
+anh em ở văn phòng đều có cơ hội ngồi học hỏi lẫn nhau. Theo tôi thấy chương
+trình này khá thú vị… Tháng này, tôi ghi chú lại các điều mà tôi học được từ các
+buổi thuyết trình của anh em.</p>
+
+<h4><a href="http://net.tutsplus.com/tutorials/php/the-repository-design-pattern/">Repository Design Pattern</a></h4>
+
+<p>Design pattern này rất hay, giúp cho business logic và gateway tách bạch rõ ràng,
+giảm thiểu duplicate, viết testcase dễ dàng hơn. Phần trình bày của Tiến khá tốt,
+tuy nhiên cách em trình bày ý tưởng qua các PHPUnit test case làm khá nhiều bạn
+lúng túng.</p>
 ]]></content>
   </entry>
   
