@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Customize index.php of Drupal for Dev Site - Vợ Ba Con</title>
+  <meta name="author" content="Andy Truong">
+
+  
+  <meta name="description" content="Tôi chỉ apply hack này ở môi trường dev, để tiện theo dõi các lỗi xảy ra nếu có,
+và đo đạc hiệu năng sử dụng XHProf 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://v3k.net/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Vợ Ba Con" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46722106-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Vợ Ba Con</a></h1>
+  
+    <h2>Trang nhà của tui nè</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:v3k.net" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Customize index.php of Drupal for Dev Site</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-10T00:41:36+07:00" pubdate data-updated="true">Jan 10<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Tôi chỉ apply hack này ở môi trường dev, để tiện theo dõi các lỗi xảy ra nếu có,
+và đo đạc hiệu năng sử dụng XHProf</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DRUPAL_ROOT&#39;</span><span class="p">,</span> <span class="nb">getcwd</span><span class="p">());</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">require_once</span> <span class="nx">DRUPAL_ROOT</span> <span class="o">.</span> <span class="s1">&#39;/includes/bootstrap.inc&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">drupal_bootstrap</span><span class="p">(</span><span class="nx">DRUPAL_BOOTSTRAP_FULL</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">try</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;go_profile&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">xhprof_enable</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">menu_execute_active_handler</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;go_profile&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$xhprof_data</span> <span class="o">=</span> <span class="nx">xhprof_disable</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$XHPROF_ROOT</span> <span class="o">=</span> <span class="s2">&quot;/var/www/&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_lib.php&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_runs.php&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$xhprof_runs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XHProfRuns_Default</span><span class="p">();</span>
+</span><span class='line'>    <span class="nv">$run_id</span> <span class="o">=</span> <span class="nv">$xhprof_runs</span><span class="o">-&gt;</span><span class="na">save_run</span><span class="p">(</span><span class="nv">$xhprof_data</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">]);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">echo</span> <span class="s1">&#39;&lt;a href=&quot;http://xhprof.da.go1.com.vn/index.php?run=&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&amp;source=&#39;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">],</span> <span class="s1">&#39;&quot;&gt;XHProf #&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&lt;/a&gt;&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nv">$p</span> <span class="o">=</span> <span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;kpr&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;kpr&#39;</span> <span class="o">:</span> <span class="s1">&#39;print_r&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="nv">$p</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
+</span><span class='line'>  <span class="nv">$p</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getTrace</span><span class="p">());</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Khi này</p>
+
+<ul>
+<li>Nếu có lỗi thì đoạn catch() sẽ chụp và in trace() rõ ràng.</li>
+<li>Nếu tôi muốn hiển thị thông tin profile từ xhprof thì tôi thêm tham số
+<code>/?go_profile=1</code> vào URL</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Andy Truong</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-10T00:41:36+07:00" pubdate data-updated="true">Jan 10<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/debug/'>Debug</a>, <a class='category' href='/blog/categories/drupal/'>Drupal</a>, <a class='category' href='/blog/categories/drupal-7/'>Drupal 7</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://v3k.net/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/" data-via="thehongtt" data-counturl="http://v3k.net/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/09/php-heros/" title="Previous Post: PHP Heros">&laquo; PHP Heros</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/">Customize index.php of Drupal for Dev Site</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/09/php-heros/">PHP Heros</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/09/motopress/">Motopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/09/drupal-7-dot-25/">Drupal 7.25</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/09/ban-tin-web-2014-01/">Bản Tin Web 2014 Tháng 01</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/andytruong">@andytruong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'andytruong',
+            count: 1,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/andytruong?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/andytruong">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/104897008099633860403?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Andy Truong -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'v3knet';
+      
+        
+        var disqus_developer = 1;
+        var disqus_identifier = 'http://v3k.net/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/';
+        var disqus_url = 'http://v3k.net/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

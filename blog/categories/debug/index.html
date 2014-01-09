@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Drupal 7.25 - Vợ Ba Con</title>
+  <title>Category: Debug - Vợ Ba Con</title>
   <meta name="author" content="Andy Truong">
 
   
-  <meta name="description" content="Release notes còn nhiều mục khác
-nữa, tôi không thấy hứng thú gì với mấy cái đó nên khỏi note. Added an optional feature to the Statistics module to &hellip;">
+  <meta name="description" content="Category: Debug">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ nữa, tôi không thấy hứng thú gì với mấy cái đó nên khỏi note
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://v3k.net/blog/2014/01/09/drupal-7-dot-25">
+  <link rel="canonical" href="http://v3k.netblog/categories/debug">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Vợ Ba Con" type="application/atom+xml">
@@ -78,154 +77,36 @@ nữa, tôi không thấy hứng thú gì với mấy cái đó nên khỏi note
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Drupal 7.25</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-09T21:45:34+07:00" pubdate data-updated="true">Jan 9<span>th</span>, 2014</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Debug</h1>
     
   </header>
-
-
-<div class="entry-content"><p><a href="https://drupal.org/drupal-7.25-release-notes">Release notes</a> còn nhiều mục khác
-nữa, tôi không thấy hứng thú gì với mấy cái đó nên khỏi note.</p>
-
-<!-- more -->
-
-
-<blockquote><p>Added an optional feature to the Statistics module to allow node views to be
-tracked by Ajax requests rather than during the server-side generation of the
-page. This allows the node counter to work on sites that use external page
-caches (string change and new administrative option: <a href="https://drupal.org/node/2164069">https://drupal.org/node/2164069</a>).</p></blockquote>
-
-<p>Tính năng rất thú vị cho các website chịu tải cao nhưng vẫn sử dụng module
-statistic #performance #statistics</p>
-
-<blockquote><p>Added a meta tag to install.php to prevent it from being indexed by search
-engines even when Drupal is installed in a subfolder (minor markup change).</p></blockquote>
-
-<p>Nhớ có lần tôi truy cập vào domain nọ, bản Drupal của họ chỉ để đó, chưa có
-install gì hết. Tôi cài giùm họ, cấu hình với SQlite database, kết quả là Drupal
-chạy vèo vèo. Lúc đó, tui mà táy máy, bật module PHP lên, rồi chạy các script độc
-độc thì không biết sẽ lụm được gì trên con server đó nữa… Tới nay thì lỗi này đã
-được fix rồi. Hôm nay đọc thấy cái fix này, tôi thấy cũng hay hay #install #seo</p>
-
-<blockquote><p>Performance improvement: Prevented block rehashing from writing blocks to the
-database on every cache clear and cron run when the blocks have not changed.
-This fix results in an extra &lsquo;saved&rsquo; key which is added and set to TRUE for
-each block returned by _block_rehash() that actually is saved to the database
-(data structure change).</p></blockquote>
-
-<p>Bắt bệnh hay #performance #hash</p>
-
-<blockquote><p>Added an optional &lsquo;skip on cron&rsquo; parameter to hook_cron_queue_info() to allow
-queues to avoid being automatically processed on cron runs (API addition).</p></blockquote>
-
-<p>Chừ thì tôi mới biết có hook này tồn tại ((= #hook #cron #api</p>
-
-<blockquote><p>Made the File and Image modules more robust when saving entities that have
-deleted files attached. The code in file_field_presave() will now remove the
-record of the deleted file from the entity before saving (minor data structure
-change).</p></blockquote>
-
-<p>DB sạch hơn chút với patch này.</p>
-
-<blockquote><p>Fixed broken tests on PHP 5.5.</p></blockquote>
-
-<p>Có vẻ như Drupal 7 chạy rất ổn định trên PHP 5.5? Có thể, nhưng tôi chỉ e ngại
-các module mở rộng! #php55 #stable #qa</p>
-
-<blockquote><p>Changed the database API to allow inserts based on a SELECT * query to work
-correctly.</p></blockquote>
-
-<p>Tính năng hay nhưng rất ít khi tôi sử dụng, <code>INSERT INTO … SELECT …</code>, người ta
-dùng nhiều và có bug, và bug đã fix #sql #db</p>
-
-<blockquote><p>Changed the database schema of the {file_managed} table to allow Drupal to
-manage files larger than 4 GB.</p></blockquote>
-
-<p>Ghê! Dùng Drupal lưu trữ file 4GB luôn #db #schema</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Andy Truong</span></span>
-
-      
-
-
-
-
-
+  <div id="blog-archives" class="category">
 
 
 
   
+  <h2>2014</h2>
+
+<article>
+  
+<h1><a href="/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/">Customize index.php of Drupal for Dev Site</a></h1>
+<time datetime="2014-01-10T00:41:36+07:00" pubdate><span class='month'>Jan</span> <span class='day'>10</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/debug/'>Debug</a>, <a class='category' href='/blog/categories/drupal/'>Drupal</a>, <a class='category' href='/blog/categories/drupal-7/'>Drupal 7</a></span>
+</footer>
 
 
-<time datetime="2014-01-09T21:45:34+07:00" pubdate data-updated="true">Jan 9<span>th</span>, 2014</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/drupal/'>Drupal</a>, <a class='category' href='/blog/categories/drupal-7/'>Drupal 7</a>, <a class='category' href='/blog/categories/release/'>release</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://v3k.net/blog/2014/01/09/drupal-7-dot-25/" data-via="thehongtt" data-counturl="http://v3k.net/blog/2014/01/09/drupal-7-dot-25/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2014/01/09/ban-tin-web-2014-01/" title="Previous Post: Bản tin web 2014 Tháng 01">&laquo; Bản tin web 2014 Tháng 01</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/01/09/motopress/" title="Next Post: Motopress">Motopress &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
 
@@ -325,10 +206,7 @@ manage files larger than 4 GB.</p></blockquote>
       var disqus_shortname = 'v3knet';
       
         
-        var disqus_developer = 1;
-        var disqus_identifier = 'http://v3k.net/blog/2014/01/09/drupal-7-dot-25/';
-        var disqus_url = 'http://v3k.net/blog/2014/01/09/drupal-7-dot-25/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

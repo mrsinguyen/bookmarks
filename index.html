@@ -9,8 +9,21 @@
   <meta name="author" content="Andy Truong">
 
   
-  <meta name="description" content="Tôi dùng chữ anh hùng ở đây không mang ý nghĩa gì đặc biệt, chỉ là những người
-tôi cảm thấy ngưỡng mộ, những người thường xuyên chia sẻ những thứ tôi &hellip;">
+  <meta name="description" content="Tôi chỉ apply hack này ở môi trường dev, để tiện theo dõi các lỗi xảy ra nếu có,
+và đo đạc hiệu năng sử dụng XHProf 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +92,115 @@ tôi cảm thấy ngưỡng mộ, những người thường xuyên chia sẻ nh
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/">Customize index.php of Drupal for Dev Site</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-10T00:41:36+07:00" pubdate data-updated="true">Jan 10<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Tôi chỉ apply hack này ở môi trường dev, để tiện theo dõi các lỗi xảy ra nếu có,
+và đo đạc hiệu năng sử dụng XHProf</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DRUPAL_ROOT&#39;</span><span class="p">,</span> <span class="nb">getcwd</span><span class="p">());</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">require_once</span> <span class="nx">DRUPAL_ROOT</span> <span class="o">.</span> <span class="s1">&#39;/includes/bootstrap.inc&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">drupal_bootstrap</span><span class="p">(</span><span class="nx">DRUPAL_BOOTSTRAP_FULL</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">try</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;go_profile&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">xhprof_enable</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">menu_execute_active_handler</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;go_profile&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$xhprof_data</span> <span class="o">=</span> <span class="nx">xhprof_disable</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$XHPROF_ROOT</span> <span class="o">=</span> <span class="s2">&quot;/var/www/&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_lib.php&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_runs.php&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$xhprof_runs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XHProfRuns_Default</span><span class="p">();</span>
+</span><span class='line'>    <span class="nv">$run_id</span> <span class="o">=</span> <span class="nv">$xhprof_runs</span><span class="o">-&gt;</span><span class="na">save_run</span><span class="p">(</span><span class="nv">$xhprof_data</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">]);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">echo</span> <span class="s1">&#39;&lt;a href=&quot;http://xhprof.da.go1.com.vn/index.php?run=&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&amp;source=&#39;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">],</span> <span class="s1">&#39;&quot;&gt;XHProf #&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&lt;/a&gt;&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nv">$p</span> <span class="o">=</span> <span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;kpr&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;kpr&#39;</span> <span class="o">:</span> <span class="s1">&#39;print_r&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="nv">$p</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
+</span><span class='line'>  <span class="nv">$p</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getTrace</span><span class="p">());</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Khi này</p>
+
+<ul>
+<li>Nếu có lỗi thì đoạn catch() sẽ chụp và in trace() rõ ràng.</li>
+<li>Nếu tôi muốn hiển thị thông tin profile từ xhprof thì tôi thêm tham số
+<code>/?go_profile=1</code> vào URL</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -568,63 +690,9 @@ alpha 7 vừa ra đời cách đây vài ngày.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/26/hello-world/">Hello World</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-26T21:43:15+07:00" pubdate data-updated="true">Dec 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Xin chào bạn, thật có duyên khi bạn ghé lại trang nhà đơn sơ của tui ^^</p>
-
-<p>Tui ít nói, ít viết, mà tui viết thì tui thường viết về các chủ đề rất… chán.
-Đây là một vài chủ đề mà tui quan tâm, nếu bạn có cùng sở thích thì bookmark tui
-rồi quay lại đọc sau nhé:</p>
-
-<ol>
-<li>Tín lý Thánh Kinh</li>
-<li>Các món về lập trình web PHP/Drupal/Javascript/…</li>
-<li>Tin tức công nghệ</li>
-<li>Hình ảnh vợ con (cái dzụ này tui hông hứa, đưa hình ảnh vợ con lên chốn công cộng tui thấy hơi kỳ kỳ…)</li>
-</ol>
-
-
-<p>Hy vọng là sắp tới tui sẽ có thời gian rủng rỉnh chút ít để chăm sóc cho cái blog
-thứ N này của tui.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/12/26/hello-world/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -635,6 +703,10 @@ thứ N này của tui.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site/">Customize index.php of Drupal for Dev Site</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/01/09/php-heros/">PHP Heros</a>
@@ -650,10 +722,6 @@ thứ N này của tui.</p>
     
       <li class="post">
         <a href="/blog/2014/01/09/ban-tin-web-2014-01/">Bản Tin Web 2014 Tháng 01</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/27/bootstrap-page-cache-drupal-7/">Bootstrap Page Cache - Drupal 7</a>
       </li>
     
   </ul>
