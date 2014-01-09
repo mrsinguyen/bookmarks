@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T23:59:30+07:00</updated>
+  <updated>2014-01-10T00:00:37+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -174,7 +174,7 @@ manage files larger than 4 GB.</p></blockquote>
 
 <ul>
 <li><a href="https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md">PSR4</a></li>
-<li><a href="http://ocramius.github.io/blog/zf2-and-symfony-service-proxies-with-doctrine-proxies/">Service Locator</a>
+<li><a href="http://ocramius.github.io/blog/zf2-and-symfony-service-proxies-with-doctrine-proxies/">Service Locator</a> —
 Tôi chưa gặp tình huống nào sử dụng quá nhiều dependency, hoặc dependency quá
 nhiều lớp như anh. Đọc qua bài viết này của Macro rất thú vị, anh giới thiệu
 trở ngại có thể gặp phải khi sử dụng DI, và cách giải quyết.</li>
