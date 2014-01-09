@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Drupal | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/drupal/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-10T00:55:50+07:00</updated>
+  <updated>2014-01-10T01:07:01+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -24,7 +24,7 @@ và đo đạc hiệu năng sử dụng XHProf.</p>
 <!-- more -->
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Customized index.php for Drupal Development environment </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Customized index.php for Drupal Development environment  (index.php)</span> <a href='/downloads/code/php/drupal/7/index.php'>download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -57,47 +57,35 @@ và đo đạc hiệu năng sử dụng XHProf.</p>
 <span class='line-number'>30</span>
 <span class='line-number'>31</span>
 <span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nb">define</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">DRUPAL_ROOT</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="nb">getcwd</span><span class="p">());</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DRUPAL_ROOT&#39;</span><span class="p">,</span> <span class="nb">getcwd</span><span class="p">());</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="k">require_once</span> <span class="nx">DRUPAL_ROOT</span> <span class="o">.</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">/</span><span class="nx">includes</span><span class="o">/</span><span class="nx">bootstrap</span><span class="o">.</span><span class="nx">inc</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;;</span>
-</span><span class='line'><span class="nx">drupal_bootstrap</span><span class="p">(</span><span class="nx">DRUPAL_BOOTSTRAP_FULL</span><span class="p">);</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'><span class="k">require_once</span> <span class="nx">DRUPAL_ROOT</span> <span class="o">.</span> <span class="s1">&#39;/includes/bootstrap.inc&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">drupal_bootstrap</span><span class="p">(</span><span class="nx">DRUPAL_BOOTSTRAP_FULL</span><span class="p">);</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="k">try</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">go_profile</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;]))</span> <span class="p">{</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'><span class="k">try</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;go_profile&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">xhprof_enable</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">xhprof_enable</span><span class="p">();</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="nx">code</span><span class="o">&gt;&lt;/</span><span class="nx">pre</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="nx">menu_execute_active_handler</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;go_profile&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$xhprof_data</span> <span class="o">=</span> <span class="nx">xhprof_disable</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="nx">menu_execute_active_handler</span><span class="p">();</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="nv">$XHPROF_ROOT</span> <span class="o">=</span> <span class="s2">&quot;/var/www/&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_lib.php&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_runs.php&quot;</span><span class="p">;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">go_profile</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;]))</span> <span class="p">{</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="nv">$xhprof_runs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XHProfRuns_Default</span><span class="p">();</span>
+</span><span class='line'>    <span class="nv">$run_id</span> <span class="o">=</span> <span class="nv">$xhprof_runs</span><span class="o">-&gt;</span><span class="na">save_run</span><span class="p">(</span><span class="nv">$xhprof_data</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">]);</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nv">$xhprof_data</span> <span class="o">=</span> <span class="nx">xhprof_disable</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$XHPROF_ROOT</span> <span class="o">=</span> <span class="s2">&quot;/var/www/&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_lib.php&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="k">include_once</span> <span class="nv">$XHPROF_ROOT</span> <span class="o">.</span> <span class="s2">&quot;/xhprof_lib/utils/xhprof_runs.php&quot;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$xhprof_runs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XHProfRuns_Default</span><span class="p">();</span>
-</span><span class='line'><span class="nv">$run_id</span> <span class="o">=</span> <span class="nv">$xhprof_runs</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">save_run</span><span class="p">(</span><span class="nv">$xhprof_data</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">]);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">echo</span> <span class="s1">&#39;&amp;lt;a href=&quot;http://xhprof.da.go1.com.vn/index.php?run=&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&amp;amp;source=&#39;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">],</span> <span class="s1">&#39;&quot;&amp;gt;XHProf #&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&amp;lt;/a&amp;gt;&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="nx">code</span><span class="o">&gt;&lt;/</span><span class="nx">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="p">}</span>
+</span><span class='line'>    <span class="k">echo</span> <span class="s1">&#39;&lt;a href=&quot;http://xhprof.da.go1.com.vn/index.php?run=&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&amp;source=&#39;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SERVER_NAME&#39;</span><span class="p">],</span> <span class="s1">&#39;&quot;&gt;XHProf #&#39;</span><span class="p">,</span> <span class="nv">$run_id</span><span class="p">,</span> <span class="s1">&#39;&lt;/a&gt;&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'><span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nv">$p</span> <span class="o">=</span> <span class="nb">function_exists</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">kpr</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;)</span> <span class="o">?</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">kpr</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nb">print_r</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;;</span>
+</span><span class='line'>  <span class="nv">$p</span> <span class="o">=</span> <span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;kpr&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;kpr&#39;</span> <span class="o">:</span> <span class="s1">&#39;print_r&#39;</span><span class="p">;</span>
 </span><span class='line'>  <span class="nv">$p</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
 </span><span class='line'>  <span class="nv">$p</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getTrace</span><span class="p">());</span>
 </span><span class='line'><span class="p">}</span>
