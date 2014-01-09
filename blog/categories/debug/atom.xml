@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Debug | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/debug/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-10T00:46:08+07:00</updated>
+  <updated>2014-01-10T00:50:03+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -19,7 +19,10 @@
     <updated>2014-01-10T00:41:36+07:00</updated>
     <id>http://v3k.net/blog/2014/01/10/customize-index-dot-php-of-drupal-for-dev-site</id>
     <content type="html"><![CDATA[<p>Tôi chỉ apply hack này ở môi trường dev, để tiện theo dõi các lỗi xảy ra nếu có,
-và đo đạc hiệu năng sử dụng XHProf</p>
+và đo đạc hiệu năng sử dụng XHProf.</p>
+
+<!-- more -->
+
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
