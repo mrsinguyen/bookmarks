@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T22:45:56+07:00</updated>
+  <updated>2014-01-09T23:04:22+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PHP Heros]]></title>
+    <link href="http://v3k.net/blog/2014/01/09/php-heros/"/>
+    <updated>2014-01-09T22:48:54+07:00</updated>
+    <id>http://v3k.net/blog/2014/01/09/php-heros</id>
+    <content type="html"><![CDATA[<p>Tôi dùng chữ anh hùng ở đây không mang ý nghĩa gì đặc biệt, chỉ là những người
+tôi cảm thấy ngưỡng mộ, những người thường xuyên chia sẻ những thứ tôi thích thú
+và có thể học hỏi được. Đương nhiên, chỉ riêng ở lãnh vực PHP mà thôi, không liên
+quan đến các quan điểm chính trị hay niềm tin :)</p>
+
+<!-- more -->
+
+
+<p>Danh sách này sẽ được cập nhật thường xuyên, nhiều người tôi chưa kịp nhớ để
+giới thiệu ở đây.</p>
+
+<h3>General</h3>
+
+<h4><a href="http://blog.ircmaxell.com/">Anthony ircmaxwell Ferrara</a></h4>
+
+<p>Hầu như bài viết nào trên blog của anh đều từ chất đến rất chất. Kỹ năng diễn đạt
+của anh ấy rất ất tượng. Nhớ lại lúc tôi đi tìm hiểu về Dependency Inject, các
+anh khác cũng làm slide, cũng giải thích tùm lùm, … tôi không rõ, đến bài giới
+thiệu của ircmaxwell thì tôi hiểu sâu và nhanh.</p>
+
+<p>Xem qua hoạt động của anh trên github, tôi càng thấy ngưỡng mộ anh hơn: PHPPHP,
+Password…</p>
+
+<h4>Others</h4>
+
+<ul>
+<li><a href="https://github.com/Seldaek">Jordi Boggiano</a> #composer #monolog #manymore</li>
+<li><a href="https://github.com/stof">Christophe stof Coevoet</a> #symfony #behat #manymore</li>
+</ul>
+
+
+<h3>Symfony Project</h3>
+
+<h4><a href="http://fabien.potencier.org/">Fabien Potencier</a></h4>
+
+<p>Tôi còn trong bụng mẹ thì anh ấy đã code rất khủng rồi! Và anh ấy code càng ngày
+càng dữ dội. Đúng là gừng càng già càng cay!</p>
+
+<p>Tôi không thể hiểu nổi làm sao anh ấy có thể phát triển và bảo trì khối lượng
+lớn các project đình đám đến như vậy nổi! Symfony, Silex, Twig,
+Expression Language, Pimple, Sismo, Goutee, …</p>
+
+<p>Anh ấy cũng nói rất nhiều ở các cuộc hội nghị, nhưng tôi không thích thú bằng
+việc đọc code, đọc post, đọc document của anh ấy.</p>
+
+<h3>Doctrine</h3>
+
+<ul>
+<li><a href="https://github.com/beberlei">Benjamin Eberlei</a> #doctrine</li>
+<li><a href="https://github.com/jwage">Jonathan H. Wage</a> #doctrine</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bản Tin Web 2013 Tháng 12]]></title>
