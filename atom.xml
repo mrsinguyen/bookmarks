@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2013-12-27T16:15:43+07:00</updated>
+  <updated>2014-01-09T21:19:41+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bản Tin Web 2013 Tháng 12]]></title>
+    <link href="http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01/"/>
+    <updated>2014-01-09T21:17:55+07:00</updated>
+    <id>http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01</id>
+    <content type="html"><![CDATA[<h3>Tổng hợp link cho 2014 tháng 01</h3>
+
+<h4><a href="http://3v4l.org/" title="online PHP shell, test in 100+ different PHP versions!">3v4l.org</a></h4>
+
+<p>Web này quả là rất hữu ích cho các lập trình viên PHP ham thích tìm tòi sâu về
+ngôn ngữ mình sử dụng. Trên 100 phiên bản khác nhau, làm sao test được khi
+client/server của ta chỉ cài được vài phiên bản #php #webapp #playround</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bootstrap Page Cache - Drupal 7]]></title>
