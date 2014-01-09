@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Drupal 7 | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/drupal-7/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-10T00:52:28+07:00</updated>
+  <updated>2014-01-10T00:55:50+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -24,7 +24,7 @@ và đo đạc hiệu năng sử dụng XHProf.</p>
 <!-- more -->
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>mark:7-9,13-30 </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Customized index.php for Drupal Development environment </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -103,7 +103,7 @@ và đo đạc hiệu năng sử dụng XHProf.</p>
 </span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>Khi này</p>
+<p><strong>Khi này:</strong></p>
 
 <ul>
 <li>Nếu có lỗi thì đoạn catch() sẽ chụp và in trace() rõ ràng.</li>
