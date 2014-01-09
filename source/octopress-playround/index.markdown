@@ -64,3 +64,7 @@ function say_hello($name = 'Andy Truong') {
 
 say_hello();
 ```
+
+### [Use include_code](http://octopress.org/docs/plugins/include-code/)
+
+This is the best way ;)
