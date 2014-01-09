@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "Bản tin web 2013 Tháng 12"
+title: "Bản tin web 2014 Tháng 01"
 date: 2014-01-09 21:17:55 +0700
 comments: true
-categories: ["Bookmarks", "Web"]
+categories: ["Monthly Collection", "Web"]
 ---
 
 Tổng hợp link cho 2014 tháng 01
 
 ## PHP
 
-- [PSR4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md)
+- [PSR4](https://github.com/php-fig/fig-standards/blob/master/proposed/psr-4-autoloader/psr-4-autoloader.md) —
+  Chuẩn #4 cho cộng đồng PHP đã được chính thức công bố, Composer và AuraPHP đã
+  bắt đầu hỗ trợ.
+- [Service Locator](http://ocramius.github.io/blog/zf2-and-symfony-service-proxies-with-doctrine-proxies/) —
+  Tôi chưa gặp tình huống nào sử dụng quá nhiều dependency, hoặc dependency quá
+  nhiều lớp như anh. Đọc qua bài viết này của Macro rất thú vị, anh giới thiệu
+  trở ngại có thể gặp phải khi sử dụng DI, và cách giải quyết.
 
 ## Drupal
 
@@ -82,3 +88,4 @@ Một số chủ đề khác, tôi hy vọng sẽ được học hỏi thêm tro
 
 - http://dcycleproject.org/blog/48/do-not-clone-database
 - http://www.garfieldtech.com/blog/beyond-abstract
+- Doctrine DBAL & ORM, tôi sẽ chính thức sử dụng Doctrine từ tháng này.

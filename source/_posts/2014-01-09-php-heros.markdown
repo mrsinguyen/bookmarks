@@ -32,6 +32,7 @@ Password…
 
 - [Jordi Boggiano](https://github.com/Seldaek) #composer #monolog #manymore
 - [Christophe stof Coevoet](https://github.com/stof) #symfony #behat #manymore
+- [Paul M. Jones](https://github.com/pmjones) #auraphp
 
 ### Symfony Project
 
@@ -51,3 +52,15 @@ việc đọc code, đọc post, đọc document của anh ấy.
 
 - [Benjamin Eberlei](https://github.com/beberlei) #doctrine
 - [Jonathan H. Wage](https://github.com/jwage) #doctrine
+- [Marco ocramius Pivetta](http://ocramius.github.io/) Tôi chỉ mới biết anh này
+  ngày hôm nay, các bài viết ở blog anh ta xem qua tiêu đề thì tôi thấy rất là
+  cuốn hút. Bookmark trang nhà anh ấy ở đây, tôi sẽ học hỏi thêm từ các bài viết của anh. #doctrine
+
+### Drupal
+
+- chx
+- sun
+- Crell
+- Fago
+- David Strauss
+- …
