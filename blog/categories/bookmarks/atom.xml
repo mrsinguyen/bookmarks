@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T22:37:17+07:00</updated>
+  <updated>2014-01-09T22:42:09+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -66,14 +66,14 @@ anh em ở văn phòng đều có cơ hội ngồi học hỏi lẫn nhau. Theo 
 trình này khá thú vị… Tháng này, tôi ghi chú lại các điều mà tôi học được từ các
 buổi thuyết trình của anh em.</p>
 
-<h4><a href="http://net.tutsplus.com/tutorials/php/the-repository-design-pattern/">Repository Design Pattern</a> <a id="repository-design-pattern">¶</a></h4>
+<h4><a href="http://net.tutsplus.com/tutorials/php/the-repository-design-pattern/">Repository Design Pattern</a> <a href="#repository-design-pattern" id="repository-design-pattern">¶</a></h4>
 
 <p>Design pattern này rất hay, giúp cho business logic và gateway tách bạch rõ ràng,
 giảm thiểu duplicate, viết testcase dễ dàng hơn. Phần trình bày của Tiến khá tốt,
 tuy nhiên cách em trình bày ý tưởng qua các PHPUnit test case làm khá nhiều bạn
 lúng túng.</p>
 
-<h4><a href="https://www.mapbox.com/">Mapbox</a> <a id="mapbox">¶</a></h4>
+<h4><a href="https://www.mapbox.com/">Mapbox</a> <a href="#mapbox" id="mapbox">¶</a></h4>
 
 <p>Lúc xưa khi Google Chrome vừa mới ra đời, tôi nói như mỉa mai, làm sao bằng được
 Firefox… Tới bây giờ thì tôi không còn rờ gì tới Firefox nữa… làm việc, đọc báo,
