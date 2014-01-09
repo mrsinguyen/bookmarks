@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T21:19:41+07:00</updated>
+  <updated>2014-01-09T21:22:20+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -25,6 +25,12 @@
 <p>Web này quả là rất hữu ích cho các lập trình viên PHP ham thích tìm tòi sâu về
 ngôn ngữ mình sử dụng. Trên 100 phiên bản khác nhau, làm sao test được khi
 client/server của ta chỉ cài được vài phiên bản #php #webapp #playround</p>
+
+<h3>Rake autocomplete</h3>
+
+<p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
+xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
+đấy #ruby #rake #bash #autocomplete</p>
 ]]></content>
   </entry>
   
