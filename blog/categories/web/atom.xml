@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-10T00:11:47+07:00</updated>
+  <updated>2014-01-10T00:16:33+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -110,6 +110,7 @@ bây giờ (feature as service).</p>
 <ul>
 <li><a href="http://dcycleproject.org/blog/48/do-not-clone-database">http://dcycleproject.org/blog/48/do-not-clone-database</a></li>
 <li><a href="http://www.garfieldtech.com/blog/beyond-abstract">http://www.garfieldtech.com/blog/beyond-abstract</a></li>
+<li>Doctrine DBAL &amp; ORM, tôi sẽ chính thức sử dụng Doctrine từ tháng này.</li>
 </ul>
 
 ]]></content>
