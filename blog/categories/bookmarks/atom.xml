@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T22:12:59+07:00</updated>
+  <updated>2014-01-09T22:31:56+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -72,6 +72,24 @@ buổi thuyết trình của anh em.</p>
 giảm thiểu duplicate, viết testcase dễ dàng hơn. Phần trình bày của Tiến khá tốt,
 tuy nhiên cách em trình bày ý tưởng qua các PHPUnit test case làm khá nhiều bạn
 lúng túng.</p>
+
+<h4><a href="https://www.mapbox.com/">Mapbox</a></h4>
+
+<p>Lúc xưa khi Google Chrome vừa mới ra đời, tôi nói như mỉa mai, làm sao bằng được
+Firefox… Tới bây giờ thì tôi không còn rờ gì tới Firefox nữa… làm việc, đọc báo,
+lướt web tôi đều sử dụng Chrome cả (trừ ipad, tôi vẫn thích Safari hơn).</p>
+
+<p>Giống như tôi lúc xưa đó, khi chú Sang trình bày Mapbox, ai ai cũng lôi Mapbox
+ra mà so sánh với Google Mapps. So sánh tính năng, hiệu suất, … gì thì Google
+Maps đều tỏ ra vượt trội so với Mapbox.</p>
+
+<p>Nhưng nếu ai đã từng làm việc với Google Maps giải quyết các vẫn đề thực tế, quay
+qua dùng Mapbox sẽ rõ, cái Developer Experience của Mapbox tốt hơn rất nhiều, chí
+ít là với người ít làm Javascript như tôi. Ngoài ra không thể không kể tới tính
+năng hosted service của Mapbox &ndash; nghĩa là nếu tôi có nhu cầu lưu các văn phòng
+đại điện, các đại lý, các điểm ăn uống ưu thích, … tôi đều có thể sử dụng Rest API
+của Mapbox lưu, xoá, sửa, truy vấn ngon lành. Tiện lắm cho các ứng dụng hiện đại
+bây giờ (feature as service).</p>
 ]]></content>
   </entry>
   
