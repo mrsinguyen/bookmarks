@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Wordpress | Vợ Ba Con]]></title>
+  <link href="http://v3k.net/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://v3k.net/"/>
+  <updated>2014-01-09T22:05:02+07:00</updated>
+  <id>http://v3k.net/</id>
+  <author>
+    <name><![CDATA[Andy Truong]]></name>
+    <email><![CDATA[v3knet@toila.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Motopress]]></title>
+    <link href="http://v3k.net/blog/2014/01/09/motopress/"/>
+    <updated>2014-01-09T21:56:27+07:00</updated>
+    <id>http://v3k.net/blog/2014/01/09/motopress</id>
+    <content type="html"><![CDATA[<p>Đang mần việc thì bạn Sang trong room Dev (trên Hipchat) quăng link giới thiệu
+<a href="http://www.getmotopress.com/content-editor/">anh chàng này</a>. Ngó qua thấy video
+chỉ tầm hơn 1 phút tí xíu, nên tôi ngó qua thử xem.</p>
+
+<p>Wow! Tuyệt vời quá. UI rất rõ ràng, kéo thả, form cấu hình nhiều tuỳ chọn, …,
+giúp người dùng rất dễ dàng setup các trang web sinh động với… Wordpress. Yeah,
+buồn chỗ đó, hắn chỉ cho Wordpress mà thôi.</p>
+
+<p>Sang giới thiệu kèm với mong muốn, có ai port cái tính năng này cho Drupal không…
+Hỏi cũng như trả lời luôn rồi, làm gì có ai. Vì cái bản quyền sử dụng, nên ở
+Drupal rất khó tìm ra cái gì hoàn chỉnh, vì người chỉ làm hoàn chỉnh ra sản phẩm
+để bán mà thôi. Module hay có, API đẹp có, theme mạnh có, … nhưng cái gì đó hoàn
+chỉnh như MotoPress thì không có ở Drupal được đâu.</p>
+]]></content>
+  </entry>
+  
+</feed>
