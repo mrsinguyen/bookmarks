@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Release | Vợ Ba Con]]></title>
+  <link href="http://v3k.net/blog/categories/release/atom.xml" rel="self"/>
+  <link href="http://v3k.net/"/>
+  <updated>2014-01-09T21:47:17+07:00</updated>
+  <id>http://v3k.net/</id>
+  <author>
+    <name><![CDATA[Andy Truong]]></name>
+    <email><![CDATA[v3knet@toila.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Drupal 7.25]]></title>
+    <link href="http://v3k.net/blog/2014/01/09/drupal-7-dot-25/"/>
+    <updated>2014-01-09T21:45:34+07:00</updated>
+    <id>http://v3k.net/blog/2014/01/09/drupal-7-dot-25</id>
+    <content type="html"><![CDATA[<p><a href="https://drupal.org/drupal-7.25-release-notes">Release notes</a> còn nhiều mục khác
+nữa, tôi không thấy hứng thú gì với mấy cái đó nên khỏi note.</p>
+
+<!-- more -->
+
+
+<blockquote><p>Added an optional feature to the Statistics module to allow node views to be
+tracked by Ajax requests rather than during the server-side generation of the
+page. This allows the node counter to work on sites that use external page
+caches (string change and new administrative option: <a href="https://drupal.org/node/2164069">https://drupal.org/node/2164069</a>).</p></blockquote>
+
+<p>Tính năng rất thú vị cho các website chịu tải cao nhưng vẫn sử dụng module
+statistic #performance #statistics</p>
+
+<blockquote><p>Added a meta tag to install.php to prevent it from being indexed by search
+engines even when Drupal is installed in a subfolder (minor markup change).</p></blockquote>
+
+<p>Nhớ có lần tôi truy cập vào domain nọ, bản Drupal của họ chỉ để đó, chưa có
+install gì hết. Tôi cài giùm họ, cấu hình với SQlite database, kết quả là Drupal
+chạy vèo vèo. Lúc đó, tui mà táy máy, bật module PHP lên, rồi chạy các script độc
+độc thì không biết sẽ lụm được gì trên con server đó nữa… Tới nay thì lỗi này đã
+được fix rồi. Hôm nay đọc thấy cái fix này, tôi thấy cũng hay hay #install #seo</p>
+
+<blockquote><p>Performance improvement: Prevented block rehashing from writing blocks to the
+database on every cache clear and cron run when the blocks have not changed.
+This fix results in an extra &lsquo;saved&rsquo; key which is added and set to TRUE for
+each block returned by _block_rehash() that actually is saved to the database
+(data structure change).</p></blockquote>
+
+<p>Bắt bệnh hay #performance #hash</p>
+
+<blockquote><p>Added an optional &lsquo;skip on cron&rsquo; parameter to hook_cron_queue_info() to allow
+queues to avoid being automatically processed on cron runs (API addition).</p></blockquote>
+
+<p>Chừ thì tôi mới biết có hook này tồn tại ((= #hook #cron #api</p>
+
+<blockquote><p>Made the File and Image modules more robust when saving entities that have
+deleted files attached. The code in file_field_presave() will now remove the
+record of the deleted file from the entity before saving (minor data structure
+change).</p></blockquote>
+
+<p>DB sạch hơn chút với patch này.</p>
+
+<blockquote><p>Fixed broken tests on PHP 5.5.</p></blockquote>
+
+<p>Có vẻ như Drupal 7 chạy rất ổn định trên PHP 5.5? Có thể, nhưng tôi chỉ e ngại
+các module mở rộng! #php55 #stable #qa</p>
+
+<blockquote><p>Changed the database API to allow inserts based on a SELECT * query to work
+correctly.</p></blockquote>
+
+<p>Tính năng hay nhưng rất ít khi tôi sử dụng, <code>INSERT INTO … SELECT …</code>, người ta
+dùng nhiều và có bug, và bug đã fix #sql #db</p>
+
+<blockquote><p>Changed the database schema of the {file_managed} table to allow Drupal to
+manage files larger than 4 GB.</p></blockquote>
+
+<p>Ghê! Dùng Drupal lưu trữ file 4GB luôn #db #schema</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T21:22:20+07:00</updated>
+  <updated>2014-01-09T21:47:17+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -18,7 +18,7 @@
     <link href="http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01/"/>
     <updated>2014-01-09T21:17:55+07:00</updated>
     <id>http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01</id>
-    <content type="html"><![CDATA[<h3>Tổng hợp link cho 2014 tháng 01</h3>
+    <content type="html"><![CDATA[<p>Tổng hợp link cho 2014 tháng 01</p>
 
 <h4><a href="http://3v4l.org/" title="online PHP shell, test in 100+ different PHP versions!">3v4l.org</a></h4>
 
@@ -31,6 +31,14 @@ client/server của ta chỉ cài được vài phiên bản #php #webapp #playr
 <p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
 xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
 đấy #ruby #rake #bash #autocomplete</p>
+
+<h2>Drupal</h2>
+
+<ul>
+<li><a href="https://drupal.org/drupal-7.25">Drupal 7.25 released</a></li>
+<li><a href="https://www.lullabot.com/blog/article/module-monday-role-delay">Module Monday: Role Delay</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
