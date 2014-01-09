@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-10T00:09:34+07:00</updated>
+  <updated>2014-01-10T00:11:47+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -46,6 +46,7 @@ Password…</p>
 <ul>
 <li><a href="https://github.com/Seldaek">Jordi Boggiano</a> #composer #monolog #manymore</li>
 <li><a href="https://github.com/stof">Christophe stof Coevoet</a> #symfony #behat #manymore</li>
+<li><a href="https://github.com/pmjones">Paul M. Jones</a> #auraphp</li>
 </ul>
 
 
