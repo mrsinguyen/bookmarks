@@ -3,7 +3,7 @@ layout: post
 title: Con trai 5 tháng tuổi
 date: 2013-12-27 00:52:17 +0700
 comments: true
-categories: ["Photos", "Son"]
+categories: ["Photos", "Family", "Son"]
 ---
 
 Con tui dễ thương lắm, đi đâu mệt mỏi, về nhà thấy cái mặt nó là tui vui liền hà.
