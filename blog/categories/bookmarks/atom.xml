@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bookmarks | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/bookmarks/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T21:50:49+07:00</updated>
+  <updated>2014-01-09T22:02:50+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -19,18 +19,6 @@
     <updated>2014-01-09T21:17:55+07:00</updated>
     <id>http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01</id>
     <content type="html"><![CDATA[<p>Tổng hợp link cho 2014 tháng 01</p>
-
-<h4><a href="http://3v4l.org/" title="online PHP shell, test in 100+ different PHP versions!">3v4l.org</a></h4>
-
-<p>Web này quả là rất hữu ích cho các lập trình viên PHP ham thích tìm tòi sâu về
-ngôn ngữ mình sử dụng. Trên 100 phiên bản khác nhau, làm sao test được khi
-client/server của ta chỉ cài được vài phiên bản #php #webapp #playround</p>
-
-<h3>Rake autocomplete</h3>
-
-<p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
-xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
-đấy #ruby #rake #bash #autocomplete</p>
 
 <h2>PHP</h2>
 
@@ -48,6 +36,27 @@ xịn này để autocomplete bash command của mình. Hiệu suất công vi�
 <li><a href="http://drupalize.me/blog/introduction-restful-web-services-drupal-8">An Introduction to RESTful Web Services in Drupal 8</a> #5star</li>
 </ul>
 
+
+<h2>Products</h2>
+
+<ul>
+<li>MotoPress <a href="http://www.getmotopress.com/content-editor/">#</a></li>
+</ul>
+
+
+<h2>Others</h2>
+
+<h4><a href="http://3v4l.org/" title="online PHP shell, test in 100+ different PHP versions!">3v4l.org</a></h4>
+
+<p>Web này quả là rất hữu ích cho các lập trình viên PHP ham thích tìm tòi sâu về
+ngôn ngữ mình sử dụng. Trên 100 phiên bản khác nhau, làm sao test được khi
+client/server của ta chỉ cài được vài phiên bản #php #webapp #playround</p>
+
+<h3>Rake autocomplete</h3>
+
+<p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
+xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
+đấy #ruby #rake #bash #autocomplete</p>
 ]]></content>
   </entry>
   

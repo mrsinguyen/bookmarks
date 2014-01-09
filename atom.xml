@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-09T21:50:49+07:00</updated>
+  <updated>2014-01-09T22:02:50+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Motopress]]></title>
+    <link href="http://v3k.net/blog/2014/01/09/motopress/"/>
+    <updated>2014-01-09T21:56:27+07:00</updated>
+    <id>http://v3k.net/blog/2014/01/09/motopress</id>
+    <content type="html"><![CDATA[<p>Đang mần việc thì bạn Sang trong room Dev (trên Hipchat) quăng link giới thiệu
+<a href="http://www.getmotopress.com/content-editor/">anh chàng này</a>. Ngó qua thấy video
+chỉ tầm hơn 1 phút tí xíu, nên tôi ngó qua thử xem.</p>
+
+<p>Wow! Tuyệt vời quá. UI rất rõ ràng, giúp người dùng rất dễ dàng setup các trang
+web sinh động với… Wordpress. Yes, buồn chỗ đó, hắn chỉ cho Wordpress mà thôi.</p>
+
+<p>Sang giới thiệu kèm với mong muốn, có ai port cái tính năng này cho Drupal không…
+Hỏi cũng như trả lời luôn rồi, làm gì có ai. Vì cái bản quyền sử dụng, nên ở
+Drupal rất khó tìm ra cái gì hoàn chỉnh, vì người chỉ làm hoàn chỉnh ra sản phẩm
+để bán mà thôi. Module hay có, API đẹp có, theme mạnh có, … nhưng cái gì đó hoàn
+chỉnh như MotoPress thì không có ở Drupal được đâu.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Drupal 7.25]]></title>
@@ -86,18 +106,6 @@ manage files larger than 4 GB.</p></blockquote>
     <id>http://v3k.net/blog/2014/01/09/ban-tin-web-2014-01</id>
     <content type="html"><![CDATA[<p>Tổng hợp link cho 2014 tháng 01</p>
 
-<h4><a href="http://3v4l.org/" title="online PHP shell, test in 100+ different PHP versions!">3v4l.org</a></h4>
-
-<p>Web này quả là rất hữu ích cho các lập trình viên PHP ham thích tìm tòi sâu về
-ngôn ngữ mình sử dụng. Trên 100 phiên bản khác nhau, làm sao test được khi
-client/server của ta chỉ cài được vài phiên bản #php #webapp #playround</p>
-
-<h3>Rake autocomplete</h3>
-
-<p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
-xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
-đấy #ruby #rake #bash #autocomplete</p>
-
 <h2>PHP</h2>
 
 <ul>
@@ -114,6 +122,27 @@ xịn này để autocomplete bash command của mình. Hiệu suất công vi�
 <li><a href="http://drupalize.me/blog/introduction-restful-web-services-drupal-8">An Introduction to RESTful Web Services in Drupal 8</a> #5star</li>
 </ul>
 
+
+<h2>Products</h2>
+
+<ul>
+<li>MotoPress <a href="http://www.getmotopress.com/content-editor/">#</a></li>
+</ul>
+
+
+<h2>Others</h2>
+
+<h4><a href="http://3v4l.org/" title="online PHP shell, test in 100+ different PHP versions!">3v4l.org</a></h4>
+
+<p>Web này quả là rất hữu ích cho các lập trình viên PHP ham thích tìm tòi sâu về
+ngôn ngữ mình sử dụng. Trên 100 phiên bản khác nhau, làm sao test được khi
+client/server của ta chỉ cài được vài phiên bản #php #webapp #playround</p>
+
+<h3>Rake autocomplete</h3>
+
+<p>Nếu bạn thường hay làm việc với các ứng dụng hỗ trợ Rake, có thể sử dụng script
+xịn này để autocomplete bash command của mình. Hiệu suất công việc tăng đáng kể
+đấy #ruby #rake #bash #autocomplete</p>
 ]]></content>
   </entry>
   
