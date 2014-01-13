@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-13T13:00:09+07:00</updated>
+  <updated>2014-01-13T13:12:56+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -44,6 +44,8 @@ trở ngại có thể gặp phải khi sử dụng DI, và cách giải quyết
 <li><a href="http://www.sitepoint.com/data-structures-4/">Graphs</a></li>
 </ul>
 </li>
+<li><a href="http://www.sitepoint.com/using-php-streams-effectively/">Using PHP Streams Effectively</a></li>
+<li><a href="http://www.sitepoint.com/series/becoming-a-php-professional/">Seri: Becoming a PHP Professional</a></li>
 </ul>
 </li>
 <li><a href="http://dev.tutsplus.com/tutorials/from-procedural-to-object-oriented-php--net-32853">From Procedural to Object Oriented PHP – Tuts+ Tutorials</a></li>
