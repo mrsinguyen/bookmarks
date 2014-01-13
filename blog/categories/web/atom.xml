@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-13T12:48:53+07:00</updated>
+  <updated>2014-01-13T12:49:56+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -147,6 +147,7 @@ bây giờ (feature as service).</p>
 </ul>
 </li>
 <li><a href="http://net.tutsplus.com/articles/general/9-ways-to-instantly-code-faster/">11 Tools to Instantly Code Faster | Nettuts+</a></li>
+<li><a href="chrome://appcache-internals/">Google Chrome > AppCache Internals</a></li>
 </ul>
 
 ]]></content>
