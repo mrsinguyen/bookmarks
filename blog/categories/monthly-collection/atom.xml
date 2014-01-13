@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Monthly Collection | Vợ Ba Con]]></title>
   <link href="http://v3k.net/blog/categories/monthly-collection/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-13T12:55:16+07:00</updated>
+  <updated>2014-01-13T13:00:09+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -46,6 +46,7 @@ trở ngại có thể gặp phải khi sử dụng DI, và cách giải quyết
 </li>
 </ul>
 </li>
+<li><a href="http://dev.tutsplus.com/tutorials/from-procedural-to-object-oriented-php--net-32853">From Procedural to Object Oriented PHP – Tuts+ Tutorials</a></li>
 <li><a href="http://jmsyst.com/libs/php-manipulator">PHP Manipulator</a> — A helper library
 for analyzing and modifying PHP source files.</li>
 <li><strong>Github</strong>
@@ -147,6 +148,7 @@ bây giờ (feature as service).</p>
 <ul>
 <li><a href="http://xem.github.io/miniCodeEditor/">miniCodeEditor</a></li>
 <li><a href="http://krakenjs.com/">KrakenJS Suite</a></li>
+<li><a href="http://casperjs.org/">CasperJS</a> — a navigation scripting and testing utility for PhantomJS and SlimerJS</li>
 </ul>
 </li>
 <li><a href="http://net.tutsplus.com/articles/general/9-ways-to-instantly-code-faster/">11 Tools to Instantly Code Faster | Nettuts+</a></li>
