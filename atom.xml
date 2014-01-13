@@ -4,7 +4,7 @@
   <title><![CDATA[Vợ Ba Con]]></title>
   <link href="http://v3k.net/atom.xml" rel="self"/>
   <link href="http://v3k.net/"/>
-  <updated>2014-01-13T12:47:41+07:00</updated>
+  <updated>2014-01-13T12:48:53+07:00</updated>
   <id>http://v3k.net/</id>
   <author>
     <name><![CDATA[Andy Truong]]></name>
@@ -395,6 +395,13 @@ bây giờ (feature as service).</p>
 <li>Doctrine DBAL &amp; ORM, tôi sẽ chính thức sử dụng Doctrine từ tháng này.</li>
 <li><a href="https://apps.facebook.com/groups_to_rss/">Groups to RSS on Facebook</a></li>
 <li><a href="https://www.digitalocean.com/community/articles/using-grep-regular-expressions-to-search-for-text-patterns-in-linux">Using Grep &amp; Regular Expressions to Search for Text Patterns in Linux | DigitalOcean</a></li>
+<li>Javascript:
+
+<ul>
+<li><a href="http://xem.github.io/miniCodeEditor/">miniCodeEditor</a></li>
+</ul>
+</li>
+<li><a href="http://net.tutsplus.com/articles/general/9-ways-to-instantly-code-faster/">11 Tools to Instantly Code Faster | Nettuts+</a></li>
 </ul>
 
 ]]></content>
