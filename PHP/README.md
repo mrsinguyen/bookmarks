@@ -8,3 +8,4 @@
 * [PEAR](http://pear.php.net/manual/en/standards.php)
 * [PSR-1](http://www.php-fig.org/psr/psr-1/)
 * [PSR-2](http://www.php-fig.org/psr/psr-2/)
+* [PHPTheRightWay](http://www.phptherightway.com/)
