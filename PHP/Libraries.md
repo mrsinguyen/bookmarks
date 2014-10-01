@@ -1,3 +1,4 @@
 - [FastRoute](https://github.com/nikic/FastRoute/)
 - [Restler](https://github.com/Luracast/Restler)
-- [PHP Parser](https://github.com/nikic/PHP-Parser/)
+- [PHP Parser](https://github.com/nikic/PHP-Parser/) — A PHP parser written in PHP
+- [phroutes](https://github.com/joegreen0991/phroute) — A super fast PHP router, with route parameters, restful controllers, filters and reverse routing.
