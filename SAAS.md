@@ -6,6 +6,14 @@
 1. [IFTTT](https://ifttt.com/)
 1. [Hackpad](https://hackpad.com)
 
+## Developer Tools
+
+1. [Email Markup Tester](https://www.google.com/webmasters/markup-tester/?hl=en) — From **Google**
+1. [Color Schemer Online](http://www.colorschemer.com/online.html)
+1. [Online Editor/IDE](https://fb.com/245741288908119/)
+1. [Markdown like for UML](http://www.nomnoml.com)
+1. [Draw.io](http://www.draw.io/) — Online Diagram drawing
+
 ## Social
 
 1. [TweetDeck](https://tweetdeck.twitter.com/)
