@@ -4,8 +4,10 @@
 
 ## Standards
 
-* [Composer](https://getcomposer.org/)
-* [PEAR](http://pear.php.net/manual/en/standards.php)
-* [PSR-1](http://www.php-fig.org/psr/psr-1/)
-* [PSR-2](http://www.php-fig.org/psr/psr-2/)
-* [PHPTheRightWay](http://www.phptherightway.com/)
+1. [PHP-FIG](http://www.php-fig.org/)
+  1. [PSR-1](http://www.php-fig.org/psr/psr-1/)
+  1. [PSR-2](http://www.php-fig.org/psr/psr-2/)
+1. [Semver](http://semver.org/spec/v2.0.0.html)
+1. [Composer](https://getcomposer.org/)
+1. [PEAR](http://pear.php.net/manual/en/standards.php)
+1. [PHPTheRightWay](http://www.phptherightway.com/)
