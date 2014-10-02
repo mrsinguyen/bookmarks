@@ -4,13 +4,21 @@
 1. [The Fall of PEAR and the Rise of Composer](http://benramsey.com/blog/2013/11/the-fall-of-pear-and-the-rise-of-composer/)
 2. [Understanding Drupal 8, part 1: the general structure of the framework](http://cipix.nl/understanding-drupal-8-part-1-general-structure-framework)
 3. [Understanding Drupal 8, part 2: The Service Container](http://cipix.nl/understanding-drupal-8-part-2-service-container)
+1. [Master the new Core of Drupal 8 now: with Symfony and Silex](https://austin2014.drupal.org/session/master-new-core-drupal-8-now-symfony-and-silex) by [weaverryan](https://www.drupal.org/user/1736490)
+1. [The road to 8.1](https://austin2014.drupal.org/session/road-81) by [Crell](https://www.drupal.org/user/26398) ([@Crell](https://twitter.com/crell))
 
 ## Module development
 
 1. [Drupal 8 Ready: What's new for Developers?](http://previousnext.com.au/blog/drupal-8-ready-whats-new-developers)
+1. [Fun with Forms in Drupal 8](https://austin2014.drupal.org/session/fun-forms-drupal-8) by [eojthebrave](https://www.drupal.org/user/79230)
+1. [Understanding the Drupal 8 Plugin System](https://austin2014.drupal.org/session/understanding-drupal-8-plugin-system) by [helior](https://www.drupal.org/user/333731) ([@helior](https://twitter.com/helior))
+1. [Routing: From Symfony via CMF to Drupal](https://austin2014.drupal.org/node/4138/edit) by [mikl ](https://www.drupal.org/user/58679)([@mikl](http://twitter.com/mikl))
+1. [Drupal module upgrader](https://www.drupal.org/project/drupalmoduleupgrader)
+
 
 ## Examples
 
+1. [Page Manager](https://www.drupal.org/project/page_manager) — rewrittern sub-module of ctools in Drupal 7
 1. [Drupal 8 Module Development, Part 1: Getting Started](http://getlevelten.com/blog/ian-whitcomb/drupal-8-module-development-part-1-getting-started)
 1. [Drupal 8 Module Development, Part 2: Forms](http://getlevelten.com/blog/ian-whitcomb/drupal-8-module-development-part-2-forms)
 1. [A practical example for converting a Drupal 7 module to work with Drupal 8](http://www.pixelite.co.nz/article/practical-example-converting-drupal-7-module-work-drupal-8)
