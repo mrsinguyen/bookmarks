@@ -5,4 +5,4 @@
 - [DrEditor](https://dreditor.org/) — Tool for reviewing Drupal patches.
 - [Hudrop.io](http://hubdrop.io/) — Mirror Drupal project on Github, easy PR, creating patch.
 - [Simplitest.me](http://simplytest.me/) — Testing Drupal modules made easy.
-- [SesioLabsProfiler](https://profiler.sensiolabs.com/drupal)
+- [SesioLabsProfiler](https://profiler.sensiolabs.com/drupal) — Tell us why our Drupal is slow.
