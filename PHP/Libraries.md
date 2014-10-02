@@ -10,3 +10,10 @@
 ## Security
 
 1. http://phpseclib.com/
+
+## Others
+
+1. [Monolog](https://github.com/Seldaek/monolog)
+2. [Guzzle](http://docs.guzzlephp.org/en/latest/)
+3. [diff](https://github.com/sebastianbergmann/diff)
+4. [flysystem](https://github.com/thephpleague/flysystem) — Flysystem, many filesystems, one API
