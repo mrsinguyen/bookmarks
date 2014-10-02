@@ -3,8 +3,12 @@
 ## Productivity
 
 1. [Asana.com](https://app.asana.com/)
-1. [IFTTT](https://ifttt.com/)
 1. [Hackpad](https://hackpad.com)
+
+## Automation
+
+1. [IFTTT](https://ifttt.com/)
+1. [Zapier](https://zapier.com/)
 
 ## Developer Tools
 
