@@ -20,7 +20,7 @@
 1. [Drupal 8: Forms, OOP style] (http://effulgentsia.drupalgardens.com/content/drupal-8-forms-oop-style)
 1. [Drupal 8 Module Development, Part 3: Plugins](http://getlevelten.com/blog/ian-whitcomb/drupal-8-module-development-part-3-plugins)
 1. [First Approach to Drupal 8](http://drewpull.drupalgardens.com/blog/first-approach-drupal-8)
-1. [Drupal 8 module development #3 - adding a settings page](hhttp://www.enginx.com/content/drupal-8-module-development-3-adding-settings-page)
+1. [Drupal 8 module development #3 - adding a settings page](http://www.enginx.com/content/drupal-8-module-development-3-adding-settings-page)
 1. [Drupal 8 Example module: block, menu, form, settings, ...](https://github.com/nyl-auster/D8-foomodule)
 1. [Upgrading the Search API to D8: Creating an entity type](http://drunkenmonkey.at/blog/search-api-d8-update-part-1)
 1. [Upgrading the Search API to D8: Configuration and schema](http://drunkenmonkey.at/blog/search-api-d8-update-part-2)
