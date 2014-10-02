@@ -8,3 +8,4 @@
 
 1. [Configuration Management and Features: a look at Drupal 8](http://nuvole.org/blog/2013/sep/03/configuration-management-and-features-look-drupal-8)
 1. [Drupal 8: Hello, Configuration Management](http://drupal8cmi.org/drupal-8-hello-configuration-management)
+1. [Creating a Blog in Drupal 8 &amp; Configuration API](https://austin2014.drupal.org/session/creating-blog-drupal-8-configuration-api) by [kepford](https://www.drupal.org/user/212517) ([@kepford](http://twitter.com/kepford))
