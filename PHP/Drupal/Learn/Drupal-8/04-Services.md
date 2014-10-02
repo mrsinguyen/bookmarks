@@ -1,5 +1,6 @@
 1. [REST and Serialization in Drupal 8](http://linclark.github.io/d8-rest-slides/)
 1. [REST: exposing data as RESTful web services](https://drupal.org/documentation/modules/rest)
+1. [Decoupled Drupal and the Future](http://slides.com/eatings/decoupled-drupal-and-the-future?token=7Kifj3qFerCnUxwwWwBw8AyTLzMr#/5)
 
 ## Code Examples
 
