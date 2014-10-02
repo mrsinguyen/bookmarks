@@ -11,3 +11,7 @@
 1. [Composer](https://getcomposer.org/)
 1. [PEAR](http://pear.php.net/manual/en/standards.php)
 1. [PHPTheRightWay](http://www.phptherightway.com/)
+
+## Playround
+
+1. [3v4l.org](http://3v4l.org/) - online PHP & HHVM shell, execute code in 100+ different versions!
