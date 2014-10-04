@@ -1,9 +1,8 @@
-## Aliases
+## Checkout
 
-    ls = log --oneline
-    caa = commit -a --amend -C HEAD
+#### Checkout single branch
 
-## Commands
+    git checkout --single-branch --branch=BranchName
 
 #### Create new branch with no history
 
@@ -24,3 +23,8 @@
 #### Release notes
 
     git log tag1...tag2 --pretty=oneline --reverse --abbrev-commit
+
+## Aliases
+
+    ls = log --oneline
+    caa = commit -a --amend -C HEAD
