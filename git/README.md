@@ -4,6 +4,10 @@
 
     git --git-dir /path/to/.git/ push --all bb
 
+#### pull and push all branches
+
+    git push --all origin
+
 ## Checkout
 
 #### Checkout single branch
