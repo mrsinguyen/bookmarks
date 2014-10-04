@@ -6,6 +6,7 @@
 1. [Hackpad](https://hackpad.com)
 1. [Hipchat](https://hipchat.com/)
 1. [Flowdock](https://www.flowdock.com/)
+2. [HelpScout](http://www.helpscout.net/) — Help Desk software
 
 ## Automation
 
