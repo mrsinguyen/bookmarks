@@ -38,3 +38,8 @@
 
     ls = log --oneline
     caa = commit -a --amend -C HEAD
+
+## Resources
+
+1. [Git Succinctly](http://net.tutsplus.com/sessions/git-succinctly/)
+1. [Git Cheat Sheet](https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf)
