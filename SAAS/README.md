@@ -4,12 +4,14 @@
 
 1. [Asana.com](https://app.asana.com/)
 1. [Hackpad](https://hackpad.com)
+1. [Hipchat](https://hipchat.com/)
+1. [Flowdock](https://www.flowdock.com/)
 
 ## Automation
 
 1. [IFTTT](https://ifttt.com/)
 1. [Zapier](https://zapier.com/)
-2. [CloudMailIn](http://www.cloudmailin.com/)
+1. [CloudMailIn](http://www.cloudmailin.com/)
 
 ## Developer Tools
 
