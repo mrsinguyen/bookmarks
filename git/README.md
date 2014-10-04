@@ -1,3 +1,9 @@
+## Misc
+
+#### Run git from other directory
+
+    git --git-dir /path/to/.git/ push --all bb
+
 ## Checkout
 
 #### Checkout single branch
