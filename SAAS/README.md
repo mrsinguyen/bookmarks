@@ -2,11 +2,12 @@
 
 ## Productivity
 
-1. [Asana.com](https://app.asana.com/)
-1. [Hackpad](https://hackpad.com)
+1. [Asana.com](https://app.asana.com/) — Manage tasks
+1. [Hackpad](https://hackpad.com) — Simple notepad
 1. [Hipchat](https://hipchat.com/)
 1. [Flowdock](https://www.flowdock.com/)
 2. [HelpScout](http://www.helpscout.net/) — Help Desk software
+3. [Freshbooks](http://www.freshbooks.com/) — Cloud accounting
 
 ## Automation
 
