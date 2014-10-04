@@ -5,6 +5,10 @@
 
 ## Commands
 
+#### Create new branch with no history
+
+    git checkout --orphan branchName
+
 #### Checkout a remote branch
 
     git remote update
