@@ -8,6 +8,7 @@
 1. [Flowdock](https://www.flowdock.com/)
 2. [HelpScout](http://www.helpscout.net/) — Help Desk software
 3. [Freshbooks](http://www.freshbooks.com/) — Cloud accounting
+4. [Harvest](https://www.getharvest.com/) — Track time
 
 ## Automation
 
