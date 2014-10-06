@@ -33,7 +33,3 @@ Awesome Drupal
 - [Ægir](http://www.aegirproject.org/) — An Drupal application to manage Drupal instances on system(s).
 - [BOA](https://github.com/omega8cc/boa)
 - [DigitalOcean](https://www.digitalocean.com/?refcode=8144a2e31660)
-
-## Awesome modules
-
-- [Bible.module](http://drupalbible.org/)
